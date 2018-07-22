@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Socket.IO chat</title>
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="span2">
+                <ul id="people" class="unstyled"></ul>
+            </div>
+            <div class="span4">
+                <ul id="msgs" class="unstyled">
+            </div>
+        </div>
+        <div class="row">
+            <div class="span5" id="login">
+                <form class="form-inline">
+                    <input type="text" class="input-small" placeholder="Your name" id="name">
+                    <input type="button" name="join" id="join" value="Join" class="btn btn-primary">
+                </form>
+            </div>
+            <div class="span5" id="chat">
+                <form id="2" class="form-inline">
+                    <input type="text" class="input" placeholder="Your message" id="msg">
+                    <input type="button" name="send" id="send" value="Send" class="btn btn-success">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/chat.js"></script>
+</body>
+
+</html>

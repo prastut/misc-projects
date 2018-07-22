@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The annual technical fest of VIT Universuty Chennai Campus">
+    <meta name="keywords" content="upcoming college festival, vit university,techfest, tech fest, technoVIT,technovit,technovit cultural events,informal events,technical events,formal events,symposium events,qubit,vitness,diseno,connectivitee,taikuun,glitz,vit,chennai,events website">
+    <meta name="author" content="krshubham, Kumar Shubham, prastut,Prastut Kumar,prashantkbhardwaj, Prashant Bhardwaj,Aman Saha,Prateek Singh,technovit, VIT University,Chennai">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Qubit | technoVIT 2016 | VIT Chennai</title>
+    <meta name="description" content="Card Expansion Effect with SVG clipPath" />
+    <meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+    <meta name="author" content="Claudio Calautti for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/videomod.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.dropdown.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <script>
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+            var root = document.getElementsByTagName('html')[0];
+            root.setAttribute('class', 'ff');
+        };
+    </script>
+    <style>
+        h2 {
+            color: white
+        }
+
+        .icon-list {
+            font-size: 14px;
+            margin-top: -10px;
+        }
+
+        .img-fix {
+            display: inline-block;
+            float: left;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .headermenu ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 40px;
+            padding-top: 10px;
+            background-color: rgba(0, 0, 0, 1);
+            box-shadow: 5px 3px 5px #000;
+            margin-top: -15px;
+        }
+
+        .headermenu ul a {
+            margin: 10px;
+            color: white;
+            list-style: none;
+        }
+
+        .headermenu ul a:hover {
+            margin: 10px;
+            color: #e2292a;
+            list-style: none;
+        }
+
+        @media(max-width:768px) {
+            #menu-technovit {
+                display: none;
+            }
+        }
+    </style>
+    <!--style>
+        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+        .embed-container iframe, .embed-container object, .embed-container embed { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        </style-->
+    </head>
+
+    <body class="demo-3">
+        <div class="container">
+            <div class="menu-wrap">
+                <nav class="menu-top">
+                    <div class="profile"><img class="img-fix" src="img/logo.png" alt="TechnoVIT" /><span></span></div>
+                    <div class="icon-list">
+                        <a href="../new-index.html">Home</a>
+                        <a href="technovit.html"> technovit'16</a>
+                        <a href="http://technovit.itechnospot.com/"> Registrations</a>
+                        <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                        <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                        <a href="team.html">Patrons</a>
+                        <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a>
+                        <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                        <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                        <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                    </div>
+                </nav>
+                <nav class="menu-side">
+                    <a href="qubit.html"><i class="fa fa-fw fa-star-o"></i> Qubit</a>
+                    <a href="connectivitieee.html"><i class="fa fa-fw fa-star-o"></i> ConnectiVITieee</a>
+                    <a href="diseno.html"><i class="fa fa-fw fa-star-o"></i> Dise&#241;o</a>
+                    <a href="vitness.html"><i class="fa fa-fw fa-star-o"></i> VITness</a>
+                    <a href="taikuun.html"><i class="fa fa-fw fa-star-o"></i> Tai:kuun</a>
+                    <a href="fashion.html"><i class="fa fa-fw fa-star-o"></i>Fashion</a>
+                    <!-- <a href="informal.html"><i class="fa fa-fw fa-star-o"></i> Informal/Gaming</a> -->
+                </nav>
+            </div>
+            <a class="menu-button" id="open-button" onclick="hideDiv()"></a>
+            <div class="content-wrap" id="main-content" onclick="showDiv()">
+                <div class="content">
+                    <div class="mymenu" id="menu-technovit">
+                        <header class="headermenu">
+                            <ul style="height: 59px;">
+                                <div style=" position: absolute; z-index: 10000; left: 0; padding-left: 20px;">
+                                    <!-- <section class="Panel Panel--intro"> -->
+                                </div>
+                                <a href="../new-index.html">Home</a>
+                                <a href="technovit.html"> technovit'16</a>
+                                <a href="http://technovit.itechnospot.com/"> Registrations</a>
+                                <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                                <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                                <a href="team.html"> TT</a>
+                                <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a> 
+                                <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                                <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                                <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                                <div style=" position: absolute; z-index: 99; right: 0; padding-right: 10px;margin-top:-9px!important;">
+                                    <img src="img/vitcc.png" width="130" height="58" style="box-shadow: none !important;" id="logo-technovit">
+                                    <!-- <section class="Panel Panel--intro"> -->
+                                </div>
+                            </ul>
+                        </header>
+                    </div>
+                    <h2 align="center"><img src="img/logo.png"/></h2>
+                    <h2 align=center style="font-color">Qubit</h2>
+                    <div class="content">
+                        <h2 align=center style="font-color">Events</h2>
+                        <!-- trianglify pattern container -->
+                        <div class="pattern pattern--hidden"></div>
+                        <!-- cards -->
+                        <div class="wrapper">
+                        <h2 style="color:white;"><center>Day 1 : 15 September</center></h2>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath1">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/qubit event pictures/Code-o-poly.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Virtual Stock Market</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <p></p>
+                                            <h3>Venue: none &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7:30PM - 3:00AM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100 per perrson</h3>
+                                            <h3>Description</h3> 
+                                            Like the name suggests, the participants will be given virtual money to trade on realtime stocks. Ever had a dream to purchase Google Stocks. Well you can now, though virtually!
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; "Laptop and good internet connection is necessary."
+                                            <br>&bull; "The event will happen on NYSE."
+
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Prastut Kumar</td>
+                                                    <td>kr.prastut@gmail.com</td>
+                                                    <td>+91 9940212530</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fenil Patel</td>
+                                                    <td>patelfenil1996@gmail.com</td>
+                                                    <td>+91 8939400000</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/new posters/CodePoly.jpg" height="650" width="1100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath2">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/qubit event pictures/QBit.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Code Slam</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB404B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00PM - 2:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 150 group of 2</h3>
+                                            <h3>Description:</h3> It is an event for those who have a love for programming. This is not just any other competitive coding event. Its a chance to show the real you. Its a chance for you to show your real interest in CS.
+                                            <h3>Rules and Regulations: </h3> &bull;"Team event of 2 people each. Its an online event. Both the partners must be present at the start of event."<br/>
+                                            <h3>Event Co-ordinator:</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Kumar Shubham</td>
+                                                    <td>kumarshubham347@gmail.com</td>
+                                                    <td>+91 9790717731</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Shrey Saraswat</td>
+                                                    <td>shrey.saraswat2015@vit.ac.in</td>
+                                                    <td>+91 9790714125</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/CODESLAM FINAL.jpg" height="1100" width="650">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath8">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath8)" width="1920" height="500" xlink:href="img/qubit event pictures/TechLunatics.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Code Hunt</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB205 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:30AM - 12:30PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100 group of 2 </h3>
+                                            <h3>Description</h3>"A scenario will be given. participant should come up with the code which can solve that scenario. Code should satisfy the several test cases" 
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; Participants can code in any language.
+                                            <br> &bull;Each task should be submitted in a given time ."
+
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>ROHITH RAGHUL S</td>
+                                                    <td>rohithragav77@gmail.com</td>
+                                                    <td>+91 9843635842</td>
+                                                </tr>
+
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/codehunt_A3.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath3">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/qubit event pictures/CodesVille.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Quiz Up</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB301 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1:00PM - 4:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100 per person</h3>
+                                            <h3>Description:</h3>Each player should play quizes based on selected topic in slots and to play QuizUp with each other
+                                            <h3>Rules and Regulations: </h3> &bull; Round 1- No Elimination
+                                            <br> &bull; Round 2-Elimination round and so on(Depends upon the number of participants)
+                                            <h3>Event Co-ordinator:</h3>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td>T.Wiselin Samuel</td>
+                                                    <td>wiselinsamuel.t2015@vit.ac.in</td>
+                                                    <td>+91 8056646143</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sharminesh</td>
+                                                    <td>@vit.ac.in</td>
+                                                    <td>+91 8438526665</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/quizup.jpg" height="650" width="1100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/cs.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" >Counter-Strike : Source</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB614 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00AM - 4:00PM for 2 days &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.500 per team</h3>
+                                            <h3>Description</h3> Tournament-based play-offs of Counter-Strike Source 
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; 5 People per Team (where everyone brings their own laptops)
+                                            &bull; Tournament Format
+                                            &bull; Standard International CS:Source Tournament Rules
+                                            &bull; No Cheating Software, Mods or Lag-Inducers allowed."
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>DEEPANJAN MUKHERJEE</td>
+                                                    <td>deepanjan.mukherjee2014@vit.aci.in</td>
+                                                    <td>+91 7338792739</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>RONAK PARMAAR</td>
+                                                    <td></td>
+                                                    <td>+91 9962384269</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/new posters/LAMP.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/cod.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Call of Duty: Modern Warfare</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB613 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00AM - 4:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 500 per team</h3>
+                                            <h3>Description</h3>A team of 4 go against each other in one of the most trending games. The last standing team will be the winner. Laptops will brought by the participants. A router is required to connect the systems. 50-100 is the expected number of participants.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; It will be conducted like tournament. All the teams will go head to head and then the quaterfinals will be conducted. Then the semifinals and the finals will take place.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Vignesh N</td>
+                                                    <td>vignesh.n2014@vit.ac.in</td>
+                                                    <td>+91 9566687872</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Praveen Kumar B</td>
+                                                    <td></td>
+                                                    <td>+91 9789187234</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/call of duty poster_A3.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/laser.png"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Laser Tag</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB503 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00AM - 4:00PM for 2 days &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.150 per person</h3>
+                                            <h3>Description</h3>Shoot your freinds and have fun without a bullet.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; It is a individual activity that involves the use of hand-held infrared-emitting targeting device.
+                                            &bull; This means no pain as targeting or shooting is done via light or simply put, laser.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Dhanush Ram</td>
+                                                    <td>sdhanush.ram2014@vit.ac.in</td>
+                                                    <td>+91 7200308008</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kaushik Murali</td>
+                                                    <td>kaushik.m2014@vit.ac.in</td>
+                                                    <td>+91 9176131146</td>
+                                                </tr>
+                                                </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/new posters/LAMP.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/minimilitia.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Mini Militia</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB302 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00PM - 4:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price Please check the Rules </h3>
+                                            <h3>Description</h3>It's a mobile game which can be played individual/team of 3
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; <a href="qubit_rulebook/mini_militia.docx"><u>Rules and Pricing</u></a>
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Deepesh. S</td>
+                                                    <td>deepesh.s2013@vit.ac.in</td>
+                                                    <td>+91 9566714909,9786211291</td>
+                                                </tr>
+
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/mini_militia_A3.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="wrapper">
+                            <h2 style="color:white;"><center>Day 2 : 16 September</center></h2>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath11">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath11)" width="1920" height="500" xlink:href="img/qubit event pictures/LinuxCommands.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Mr. Robot</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB-404B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1:00PM - 4:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100 per person</h3>
+                                            <h3>Description</h3>"It is an individual event in which the participant must find bugs in the given code and fix them to make them executable. They will also be given pieces of code to arrange them in order to compile and run them. Hence the motto would be ~ TALK is cheap. FIX the BUG!"
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; The participant must solve the problems in a given time frame and the one who solves most questions in the shortest time is declared as Mr. Robot.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td>Aman Saha</td>
+                                                    <td>aman.saha2015@vit.ac.in </td>
+                                                    <td>+91 9790714125</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Prateek Singh </td>
+                                                    <td>prateek.singh2015@vit.ac.in </td>
+                                                    <td>+91 9910131196</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/MR. ROBOT FINAL.jpg" height="650" width="1100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath4">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/qubit event pictures/finalspider.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color: black;">Form a PY</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB-302 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1:00PM - 3:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100 group of 2</h3>
+                                            <h3>Description:</h3>jumbled python codes will be given to the participants to solve in limited time period.
+                                            <h3>Rules and Regulations: </h3> &bull;participants must enter into the event empty handed, carrying only their ID cards.
+                                            <br> &bull; pen and paper will be provided by us.
+                                            <br> &bull; 5 questions containing jumbled python code will be given to the participants.
+                                            <br> &bull; 30 minutes time will be given to complete the contest. the contestant who finishes first will receive money as price. (the amount of the price will depend upon the number of participants)"
+                                            <h3>Event Co-ordinator:</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Abhay Khera </td>
+                                                    <td>abhay.khera2015@vit.ac.in</td>
+                                                    <td>+91 7358527090</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lakshya Suri </td>
+                                                    <td>lakshya.suri2015@vit.ac.in</td>
+                                                    <td>+91 9825400706</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/new posters/Search Spiders.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath7">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath7)" width="1920" height="500" xlink:href="img/qubit event pictures/Digilnq.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Alkedia</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB308 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00AM - 1:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.300 team of 3</h3>
+                                            <h3>Description</h3>The game is a digitalised treasure hunt where the participants solve questions by scanning qr code , each qr code is one of the keys to unlock and shutdown the artificial agent which took over the city alkedia , a smart city with advanced technology. The participants are the last hope to destroy the artificial intelligence controlling the city.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull;Participants have to scan the QR codes for clues and carefully understand them. The clues have to be solved in sequence in a single mobile. Any misconduct if found the team will be disqualified. 
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Gogul Sharath S</td>
+                                                    <td>gogul.sharaths2014@vit.ac.in</td>
+                                                    <td>+91 9442329938</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hari Prakash</td>
+                                                    <td>hari.prakashv2014@vit.ac.in</td>
+                                                    <td>+91 8220598480</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/sper.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Speak Eat Repeat</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB Round Amphi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00AM - 1:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.250 team of 3 </h3>
+                                            <h3>Description</h3>fun filled includes eating and tamil dailouge n counter fluency.  
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; Only four members in a group. One should participate in atleast one round.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Keerthi. V</td>
+                                                    <td>keerthi.2015@vit.ac.in</td>
+                                                    <td>+91 9445864998</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arunashree A</td>
+                                                    <td>arunashree.a2015@vit.ac.in</td>
+                                                    <td>+91 9092039907</td>
+                                                </tr>
+                                                </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/speak eat repeat.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="wrapper">
+                            <h2 style="color:white;"><center>Day 3 : 17 September</center></h2>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath5">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/qubit event pictures/techdumbc.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Facebook Bingo</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB-302&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1:00PM - 3:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100 per person</h3>
+                                            <h3>Description</h3> Its an event which correlate with the theme smarter city where people need to upload their photographs in facebook based on the theme while registering they should give their Facebook id .people with more likes will be the winner.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull;player who would get more likes would be the winner.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>M.SUPRAJA</td>
+                                                    <td>m.supraja2015@vit.ac.in</td>
+                                                    <td>+91 9790763873</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>GK.PAVITHRA</td>
+                                                    <td>pavithrag.k2015@vit.ac.in</td>
+                                                    <td>+91 8428691821</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/fb bingo.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/qubit event pictures/ScrambleC.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Digi-Waste User</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB-412 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00AM - 1:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100 group of 2</h3>
+                                            <h3>Description</h3>It's an event in which one has to make something creative and useful by using waste material. Even if team can't able to show their creativity in a given limited time ,then they still can upload their work/creativity even after completing the  limited time using link. By taking snapshots of their creativity and upload into the given link. 
+                                            <br>
+                                            <h3>Rules and Regulations</h3> 
+                                            <br> &bull; Participant should use only waste material,no market product,try to complete in limited time,participants taking exceeding time can lose their marks,participants has to take cello tape,colors,fevikwick and other decorating accessories.but try to use more and more reusable/waste product.
+                                            More creativity+product usefulness+using more waste/reusable products+less no. of members in each group=more marks"
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Geetanjli khatter</td>
+                                                    <td>geetanjli.khatter2015@vit.ac.in</td>
+                                                    <td>+91 9790724380</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Anushka Bohara</td>
+                                                    <td>anushka.bohara2015@vit.ac.in</td>
+                                                    <td>+91 9790718690</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/DIGI WASTE_A3.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/qubit event pictures/NerdorNewbie.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Counter Mania</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB308 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00AM - 1:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100 per person</h3>
+                                            <h3>Description</h3> "First Round Consists of Logo Quizzing. The second round is a JAM on a Tech Topic named as TechTalk. The third round will consist of the participants creating an idea and presentation for their own app idea, where the best one wins"
+                                            <h3>Rules and Regulations</h3> &bull; Participant must be Individual
+                                            <br> &bull; First there will be a preliminary round where no one will be eliminated
+                                            <br> &bull; Then, the main series 1st round starts and 50% participants are eliminated
+                                            <br> &bull; Then in the 2nd round 80% of the participants will be eliminated
+                                            <br> &bull; Then in the 3rd round the winner is selected
+                                            <br>
+                                            <h3>Event Co-ordinators</h3>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td>PRANAVCHENDUR T K</td>
+                                                    <td>pranavchendurt.k2015@vit.ac.in</td>
+                                                    <td>+91 9787972333</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PRATHAP K V</td>
+                                                    <td>kv.prathap2015@vit.ac.in</td>
+                                                    <td>+91 9445627554</td>
+                                                </tr>                                            
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/COUNTERMANIA FINAL.jpg" height="650" width="600">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/doodle.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color: black;">Doodle 2.0</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB Round Amphi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00AM - 12:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 200 team of 2</h3>
+                                            <h3>Description</h3> It's a full of fun event which gives only happiness to everyone.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; It will be in 4 rounds with different type of fun games based on balls paper cups balloons water etc..
+                                            <br> &bull; 1st round is warm-up no elimination
+                                            <br> &bull; 2nd round half will be eliminated
+                                            <br> &bull; 3rd round half will be eliminated
+                                            <br> &bull; 4th round final one frst two point scorers are winners
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Thirukumaran</td>
+                                                    <td></td>
+                                                    <td>+91 9942248686</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Arjun Natrajan</td>
+                                                    <td>arjun.natarajanr2014@vit.ac.in</td>
+                                                    <td>+91 9597469453</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/doodle 2.0.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/beg.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Beg Borrow Steal</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB401 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00PM - 4:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.200 team of 2 </h3>
+                                            <h3>Description</h3>Stealing is not a crime in technovit'16  
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; The organizers provide the contestants with a list of 25-30 items where contestants have to bring these items by asking or borrowing from others within our campus to the limit of 1 hour.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Akshat Chandra</td>
+                                                    <td>akshat.chandra2015@vit.ac.in</td>
+                                                    <td>+91 8171482622</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kushagra Srivastava</td>
+                                                    <td>kushagra.srivastava2015@vit.ac.in</td>
+                                                    <td>+91 9798494274</td>
+                                                </tr>
+                                                </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/beg borrow steel.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <h2 style="color:white;"><center>Workshops</center></h2>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/game.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">Game Dev Camp</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB401 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00PM - 4:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.500 per person </h3>
+                                            <h3>Description</h3>Make a game in one day.  
+                                            <br>
+                                            &bull; No prior experience required
+                                            <br>&bull; Unity Engine makes it easy
+                                            <br>&bull; Intro to Game Development concepts
+                                            <br>&bull; Game Physics Engine
+                                            <br>&bull; Graphics and UI/UX
+                                            <br>&bull; Lern game scripting
+                                            <br>
+                                            <h3>Date: </h3> 12 September
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Aman Hussain</td>
+                                                    <td>aman.hussain2015@vit.ac.in</td>
+                                                    <td>+91 9790706993</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Shubhojeet Pramanik</td>
+                                                    <td>shubhojeet.pramanik2015@vit.ac.in</td>
+                                                    <td>+91 9790729931</td>
+                                                </tr>
+                                                </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/unnamed.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/python.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Python Learning</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB401 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00PM - 4:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.1200 per person</h3>
+                                            <h3>Description</h3>A two day workshop on Python. National level certificatesto all Participants at the end of workshop on second day.  
+                                            <br>
+                                            <h3>Date: </h3> 8<sup>th</sup>  and 9<sup>th</sup> September
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>B. Aishwarya</td>
+                                                    <td>+91 9840953280</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drishti Jain</td>
+                                                    <td>+91 9840682506</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Varshini</td>
+                                                    <td>+91 8754275329</td>
+                                                </tr>
+                                                </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/001 Python w_o championship poster.jpg" height="500" width="650">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/web-design.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">Web Designing</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB401 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00PM - 4:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.1200 per person </h3>
+                                            <h3>Description</h3>A two day workshop on Python. National level certificatesto all Participants at the end of workshop on second day.  
+                                            <br>
+                                            <h3>Date: </h3> &bull; 13<sup>th</sup> and 14<sup>th</sup> September
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Parthivi Gupta</td>
+                                                    <td>+91 9884669054</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Anushka Sharma</td>
+                                                    <td>+91 9790710497</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nidhi Johnson</td>
+                                                    <td>+91 9820638033</td>
+                                                </tr>
+                                                </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/qubit event pictures/001 Web Designing.jpg" height="700" width="900">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath12">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/qubit event pictures/graphic.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Creative Graphic Designing</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB401 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00PM - 4:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.400 per person </h3>
+                                            <h3>Description</h3>Learn the art of graphics designing. Changing a simple photo onto Magnificant.
+                                            <br>
+                                            <h3>Date: </h3> 12<sup>th</sup> September
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Ashrene Roy</td>
+                                                    <td>+91 9790728752</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Supragya Raj</td>
+                                                    <td>+91 9790722967</td>
+                                                </tr>
+                                                </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div style="display:flex; align-items: center; justify-content: center;">
+                                                <img src="img/new posters/LAMP.jpg" height="650" width="500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        <!-- /cards -->
+                    </div>
+                    <!-- /content -->
+
+                </div>
+                <!-- Related demos -->
+                <section class="content content--related">
+                </section>
+            </div>
+            <!-- /container -->
+            <!-- JS -->
+            <script src="js/vendors/trianglify.min.js"></script>
+            <script src="js/vendors/TweenMax.min.js"></script>
+            <script src="js/vendors/ScrollToPlugin.min.js"></script>
+            <script src="js/vendors/cash.min.js"></script>
+            <script src="js/Card-polygon.js"></script>
+            <script src="js/demo-3.js"></script>
+            <script src="js/uiMorphingButton_fixed.js"></script>
+            <script src="js/classie.js"></script>
+            <script src="js/main.js"></script>
+            <script>
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: '_ZKMM53ZxXM',
+                events: {
+                    'onPlayerReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                },
+                playerVars: {
+                    rel: 0
+                }
+            });
+        }
+
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+        var done = true;
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 6000);
+                done = true;
+            }
+        }
+
+        function stopVideo() {
+            player.stopVideo();
+        }
+
+        (function() {
+
+            new UIMorphingButton(document.querySelector('.morph-button'), {
+                closeEl: '.icon-close'
+            });
+        })();
+
+        function hideDiv() {
+            document.getElementById('menu-technovit').style.display = "none";
+        }
+
+        function showDiv() {
+            document.getElementById('menu-technovit').style.display = "block";
+        }
+    </script>
+    <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
+    <div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="qubit.html">Qubit - SCSE</a></li>
+            <li><a href="connectivitieee.html">Connectivitiee - SENSE and SELECT</a></li>
+            <li><a href="diseno.html">Dise&#241;o - SMBS</a></li>
+            <li><a href="taikuun.html">Tai:kuun - Business</a></li>
+            <li><a href="vitness.html">VITness - Law</a></li>
+            <li><a href="fashion.html">Glitz - Fashion</a></li>
+        </ul>
+    </div>
+    <div id="jq-dropdown-2" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="documents/day1.pdf">Day 1 Schedule</a></li>
+            <li><a href="documents/day2.pdf">Day 2 Schedule</a></li>
+            <li><a href="documents/day3.pdf">Day 3 Schedule</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

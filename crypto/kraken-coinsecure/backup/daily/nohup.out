@@ -1,0 +1,6 @@
+Receiving...
+17600000
+Traceback (most recent call last):
+  File "both_daily.py", line 51, in <module>
+    time.sleep(60*60)
+KeyboardInterrupt

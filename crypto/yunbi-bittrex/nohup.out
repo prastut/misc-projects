@@ -1,0 +1,5 @@
+8.153217999999999 8.082192000000001
+Traceback (most recent call last):
+  File "both.py", line 66, in <module>
+    time.sleep(60*60)
+KeyboardInterrupt

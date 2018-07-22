@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The annual technical fest of VIT Universuty Chennai Campus">
+    <meta name="keywords" content="upcoming college festival, vit university,techfest, tech fest, technoVIT,technovit,technovit cultural events,informal events,technical events,formal events,symposium events,qubit,vitness,diseno,connectivitee,taikuun,glitz,vit,chennai,events website">
+    <meta name="author" content="krshubham, Kumar Shubham, prastut,Prastut Kumar,prashantkbhardwaj, Prashant Bhardwaj,Aman Saha,Prateek Singh,technovit, VIT University,Chennai">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ConnectiVITieee | technoVIT 2016-17 | VIT Chennai</title>
+    <meta name="description" content="Card Expansion Effect with SVG clipPath" />
+    <meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+    <meta name="author" content="Claudio Calautti for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/videomod.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.dropdown.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        var root = document.getElementsByTagName('html')[0];
+        root.setAttribute('class', 'ff');
+    };
+    </script>
+    <style>
+    h2 {
+        color: white
+    }
+    
+    @media(max-width:768px) {
+        #menu-technovit {
+            display: none;
+        }
+    }
+    
+    .icon-list {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    
+    .img-fix {
+        display: inline-block;
+        float: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .headermenu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 5px 3px 5px #000;
+        margin-top: -15px;
+    }
+    
+    .headermenu ul a {
+        margin: 10px;
+        color: white;
+        list-style: none;
+    }
+    
+    .headermenu ul a:hover {
+        margin: 10px;
+        color: #e2292a;
+        list-style: none;
+    }
+    </style>
+    <!--style>
+        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+        .embed-container iframe, .embed-container object, .embed-container embed { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style-->
+</head>
+
+<body class="demo-3">
+    <div class="container">
+        <div class="menu-wrap">
+            <nav class="menu-top">
+                <div class="profile"><img class="img-fix" src="img/logo.png" alt="TechnoVIT" /><span></span></div>
+                <div class="icon-list">
+                    <a href="../new-index.html">Home</a>
+                    <a href="technovit.html"> technovit'16</a>
+                    <a href="http://technovit.itechnospot.com/"> Registrations</a>
+                    <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                    <a href="team.html"> TT</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a> 
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                    <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                    <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                </div>
+            </nav>
+            <nav class="menu-side">
+                <a href="qubit.html"><i class="fa fa-fw fa-star-o"></i> Qubit</a>
+                <a href="connectivitieee.html"><i class="fa fa-fw fa-star-o"></i> ConnectiVITieee</a>
+                <a href="diseno.html"><i class="fa fa-fw fa-star-o"></i> Dise&#241;o</a>
+                <a href="vitness.html"><i class="fa fa-fw fa-star-o"></i> VITness</a>
+                <a href="taikuun.html"><i class="fa fa-fw fa-star-o"></i> Tai:kuun</a>
+                <a href="fashion.html"><i class="fa fa-fw fa-star-o"></i>Fashion</a>
+            </nav>
+        </div>
+        <a class="menu-button" id="open-button" onclick="hideDiv()"></a>
+        <div class="content-wrap" id="main-content" onclick="showDiv()">
+            <div class="content">
+                <div class="mymenu" id="menu-technovit">
+                    <header class="headermenu">
+                        <ul style="height: 59px;">
+                            <div style=" position: absolute; z-index: 10000; left: 0; padding-left: 20px;">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                            <a href="../new-index.html">Home</a>
+                            <a href="technovit.html"> technovit'16</a>
+                            <a href="http://technovit.itechnospot.com/"> Registrations</a>
+                            <a href="../Schedule_technovit'16.pdf"> Schedule</a>
+                            <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                            <a href="team.html"> TT</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                            <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                            <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register For the marathon</a>
+                            <div style=" position: absolute; z-index: 99; right: 0; padding-right: 10px;margin-top:-9px!important;">
+                                <img src="img/vitcc.png" width="130" height="58" style="box-shadow: none !important;" id="logo-technovit">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                        </ul>
+                    </header>
+                </div>
+                <h2 align="center"><img src="img/logo.png"/></h2>
+                <h2 align=center style="font-color">ConnectiVITieee</h2>
+                <h2 align=center style="font-color">Events</h2>
+                <!-- trianglify pattern container -->
+                <div class="pattern pattern--hidden"></div>
+                <!-- cards -->
+                <div class="wrapper">
+                    
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath1">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/blur.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">BLUR</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: AB 309 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEP 16/17 :&nbsp;09:00- 16:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 150 per team of 3</h3>
+                                    <h3>Description</h3> “Power packed racing.”
+                                        Experience “virtually real” racing, unlimited powers and strength in this team racing event. Destroy your opponents and gather the points for your victory. Satisfy your need for speed in Blur..! 
+                                        Ladies and gentlemen, Start your Engines!!!
+                                    <br>
+                                    <h3>Rules and Regulations</h3>
+                                        <li>In each match, 3 races will be conducted.</li><li> The team with the maximum points will move to the next round.</li>
+                                        <li>Note: Participants must bring their own laptops with the game installed.</li>
+
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>S Madhu</td>
+                                            <td>smadhu638@gmail.com</td>
+                                            <td>+91 9177605142</td>
+                                        </tr>
+                                        <tr>
+                                            <td>P Akhil</td>
+                                            <td>akhilpulipati379@gmail.com</td>
+                                            <td>+91 8939728444</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/sol-dare.jpg" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath1">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/bplan.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Business Plan</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: AB 612 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEPT 16 : &nbsp;14:30 - 16:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 100 per team of 2</h3>
+                                    <h3>Description</h3>
+                                        “The small opportunities behind great achievements.” 
+                                        Spontaneously design and market your product, to impress and receive your reward: cold hard b.e.a.utiful cash. Keep in mind funds, profit, feasibility, the entire “business plan”.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> 
+                                    <br>
+                                    <li>Round 1: Executive Summaries.Design your product based on the on-spot topic given. Prepare a one page document detailing about financial considerations, marketing strategies, profit making, and feasibility. Semi-finalists will be decided based on the plan prepared.</li> 
+                                    <li>Round 2: Presentations
+                                    Based on the in-depth feedback from the judges’ panel, prepare your final presentation.</li>
+                                    <li>Note: Participants must bring their own laptops. </li>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Rounak Pratap</td>
+                                            <td>rounak.pratap2013@vit.ac.in</td>
+                                            <td>+91 9677273872</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/sol-dare.jpg" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath18">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath18)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/humfoo.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Human Foosball</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: Football Court &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEP 15/16/17:&nbsp; 09:00
+ - 16:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/><br/>Rs 200 for team of 5.</h3>
+                                    <h3>Description</h3> 
+                                        “Play at your extreme.”
+                                        Its football. Its foosball. Maybe a little bit of both. Have your world shrunk, or the game grown, larger than life. And more than your head in the game. Have you the guts to challenge human foosball? 
+                                    <br>
+                                    <h3>Rules and Regulations</h3>
+                                       <a href="connectivitee_rulebook/Rulebook_Humanfoosball.docx">RuleBook</a>
+                                    <br>                                    
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Shankar Singamsetty</td>
+                                            <td>sjayaratna.shankar2014@vit.ac.in</td>
+                                            <td>+91 9962412017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shubham Kathuria</td>
+                                            <td>shubham.kathuria2014@vit.ac.in</td>
+                                            <td>+91 8939489309</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/CLICK ZONE.jpg" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath3">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/informal/potpouri.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">POTPOURI</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: AB 401
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEP 15:&nbsp;13:00
+ - 16:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 100 per team of 2 or 3</h3>
+                                    <h3>Description:</h3>
+                                    “Marvel or DC… Whose side are you on?”
+                                    The legendary empires, battle of the century. And we need warriors, with a specific skill set: severe, incurable obsession. Suit up for the quiz of a lifetime, and have your brains rattled in all the action.
+                                    <h3>Rules and Regulations: </h3>
+                                    <br>
+                                    <a href="connectivitee_rulebook/Rulebook_Potpourri.docx">The Rulebook</a>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Akash Sinha</td>
+                                            <td>akash.sinha2014@vit.ac.in</td>
+                                            <td>+91 8871514038</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tushar Sidhra</td>
+                                            <td>tushar.sidhra@gmail.com</td>
+                                            <td>+91 9962416259</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gajraj</td>
+                                            <td>gajrajphalshwal@gmail.com</td>
+                                            <td>+91 9092882297</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/TECHBUZZ.jpg" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/informal/vit got talentscvs.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">VIT's GOT TALENT</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: MBA Amphi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sep 17 :&nbsp;13:00
+ - 16:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/><br/><li>Rs 100 per individual</li><br/><li>Rs 200 per duet</li><br/><li>Rs250 for 3-6 memebers team.</li></h3>
+                                    <h3>Description</h3>
+                                    “With ordinary talent and extraordinary perseverance, all things are attainable.”
+                                    The checkered floor is all yours. Celebrating the best of talents, don’t miss VIT’s one and only showcase platform, VIT’s got Talent..! There is no restriction on talent, except mass skill and entertainment. May the best talent win..!
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="connectivitee_rulebook/Rulebook_Vitgottalent.docx">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Shruthi Sairaj</td>
+                                            <td>shruthi.sairaj2014@vit.ac.in</td>
+                                            <td>+91 9884587250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sri Vatsa Rajesh</td>
+                                            <td>r.srivatsa2014@vit.ac.in</td>
+                                            <td>+91 8148526557</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maligela Meghana</td>
+                                            <td>maligela.meghana2014@vit.ac.in</td>
+                                            <td>+91 9640219997</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/Death Race.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">DEATH RACE</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: Throwball Ground &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEP 15: 11:00
+ - 16:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 1000 per team of 5</h3>
+                                    <h3>Description</h3>
+                                    Do YOU have the world’s most DEADLY robot? Are YOU ready to CRUSH YOUR OPPONENT? Are you READY TO WIN, FIGHT till the end, fight till DEATH? 
+                                    If that’s so, YOU are in the right place. Welcome to connectiVITieee’16‘s very own DEATH RACE! Brace yourselves to experience the ultimate battle of blades, a war of brains and brawn, and robot possessed devils themselves. This time, we’re taking the Death Race to a whole new level! Don’t say we didn’t warn you.
+
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="connectivitee_rulebook/Rulebook for Death Racev2 (final).docx">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Mrugank Kharate</td>
+                                            <td>kharate.mruganksanjay2014@vit.ac.in</td>
+                                            <td>+91 9637164174</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Harsh Mehta</td>
+                                            <td>-</td>
+                                            <td>+91 9952041808</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/Sherlock Ohms.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">SHERLOCK OHMS</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: MBA AMPHI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEP 15/16 : 11:00
+ - 13:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 100 per team of 2</h3>
+                                    <h3>Description</h3>
+                                    "Sherlock Ohms is no ordinary event... in fact, “it's quite a three pipe problem”. Get ready, put on your hats, and for heaven’s sake, Watson, get over here! This 2 day event is designed to test your quick-thinking, observation, code-breaking, as well as technical skills. Play a Sherlock Holmes starring in an electrical world, and solve riddles and crimes to win. 
+                                    “The question is not if, but how. The Game is afoot.” 
+                                    "   
+                                     “To all those investigators out there, “come at once if convenient. If inconvenient, come all the same”.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Abdul Zaheer</td>
+                                            <td>abdul.zaheer2014@vit.ac.in</td>
+                                            <td>+91 9092855128</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sudeep Reddy</td>
+                                            <td>chsai.sudeep2014@vit.ac.in</td>
+                                            <td>+91 9962407116</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tarun Penumaka</td>
+                                            <td>tarun.penumaka@vit.ac.in</td>
+                                            <td>+91 9087563261</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ishwarya</td>
+                                            <td>r.ishwarya2014@vit.ac.in</td>
+                                            <td>+91 8124378266</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Swagata</td>
+                                            <td>swagata.biswas2014@vit.ac.in </td>
+                                            <td>+91 9952038354</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/Wordsmith.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">WORDSMITH</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1 702 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEP 16 :14:00
+ - 16:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 100 per team of 2</h3>
+                                    <h3>Description</h3>
+                                    This event calls intellectual minds, or “smiths”, to discover and face the “literal” challenge presented before them. Need more hints? Crafting words from words, dare you try?
+                                    “ ‘Literally’ crafting.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Mohammed Thaha</td>
+                                            <td>-</td>
+                                            <td>9092860835</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Abhinay Aman</td>
+                                            <td>-</td>
+                                            <td>8190846897</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rashi Gupta</td>
+                                            <td>-</td>
+                                            <td>9092962692</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/techbuzz.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">TECHBUZZ</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1 701 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEP 15 : 09:00
+ - 11:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 100 per team of 2</h3>
+                                    <h3>Description</h3>
+                                    Unleash the techie in you by rolling in for “the tech buzz”. Showcase your technical skills, and unlock your technical knowledge at the speed of thoughts. Flaunt your tech savvy, and play to win!
+                                    “Grey matter matters.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Akanksha</td>
+                                            <td>akanksha.2014@vit.ac.in</td>
+                                            <td>+91 7708394084</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Devanshu Saxena</td>
+                                            <td>devanshu.saxena2014@vit.ac.in</td>
+                                            <td>+91 9087720177</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nithin Raj</td>
+                                            <td>-</td>
+                                            <td>+91 9500085033</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shikhar Shukla</td>
+                                            <td>shikar.shukla2014@vit.ac.in</td>
+                                            <td>+91 9941440593</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/MATHETRONICS.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">MATHETRONICS</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1 307 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEP 15/16: 09:00
+ - 11:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 100 per team of 2</h3>
+                                    <h3>Description</h3>
+                                    For those aspiring for circuit designing, but have no clue how to start, mathetronics is your place to be. This 2 hour workshop will bring you from the basics of circuit designing, and prep you for team challenges and questionnaire rounds. 
+                                    “Find the elusive X using circuits.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="connectivitee_rulebook/mathetronics.docx">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Anish mukherjee</td>
+                                            <td>-</td>
+                                            <td>+91 9709076322</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Abishiek kanujia</td>
+                                            <td>abhishek.kanaujia2014@vit.ac.in</td>
+                                            <td>+91 9092704409</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Komal sachdeva</td>
+                                            <td>-</td>
+                                            <td>+91 9962416084</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jasleen</td>
+                                            <td>jasleen.saluja2014@vit.ac.in</td>
+                                            <td>+91 9962416085</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/VirtualReality.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">VIRTUAL REALITY</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1 711 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALL DAYS
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 50 per individual</h3>
+                                    <h3>Description</h3>
+                                    As cities gear up for virtuality, it wouldn't be fair if we don't have our share of it. Experience something unreal, something imaginative, yet something terrifying! Something you've always wanted! Step up for a mind boggling thriller, 360 degrees virtual reality experience! 
+                                    “Stepping into the grand landscape of imagination.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Vaishnavi Priyanka</td>
+                                            <td>rsjvaishnavi.priyanka2014@vit.ac.in</td>
+                                            <td>+91 9944366169</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Divya Pallineni</td>
+                                            <td>divya.pallineni2014@vit.ac.in</td>
+                                            <td>+91 9505378059</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vaibhav Chandran</td>
+                                            <td>jvaibhav.chandran2014@vit.ac.in</td>
+                                            <td>+91 9952042478</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Kunal Soni</td>
+                                            <td>kunal.soni2014@vit.ac.in</td>
+                                            <td>+91 9501656554</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/bomb defusal.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">BOMB DIFFUSAL</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1 712 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16/SEP -12:00
+ - 14:00 17/SEP -11:00
+ - 12:00 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 150 per team of 3</h3>
+                                    <h3>Description</h3>
+                                    Help save or die trying! Do you have the skills to diffuse this challenge? A game involving technique, aptitude, and fun, grab your partners in crime and throw yourself into a world of entertainment and brains!  
+                                    “Your mind, eyes and ears shall guide you into a world of surprise!”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Mukul Dwivedi</td>
+                                            <td>-</td>
+                                            <td>+91 9094115812</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rishi Raj Gupta</td>
+                                            <td>-</td>
+                                            <td>+91 8853705152</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/Forensics.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">FORENSCIS</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1 601,609,610,611 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16/SEP -13:00
+ - 16:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 250 per team of 4</h3>
+                                    <h3>Description</h3>
+                                    Mysterious ways “accidents” happen. Can you uncover the truth?
+                                    “It is by doubting that we come to investigate, and by investigating that we recognize the truth.“smiths”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="connectivitee_rulebook/forensic.docx">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Karishma</td>
+                                            <td>karishma.2014@vit.ac.in</td>
+                                            <td>+91 9962407586</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tejal</td>
+                                            <td>tejal.ketkar2014@vit.ac.in</td>
+                                            <td>+91 9092815857</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Robin Singh</td>
+                                            <td>robin.singh2014@vitac.in</td>
+                                            <td>+91 9560062376</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tuisha Singh</td>
+                                            <td>tuisha.singh2014@vit.ac.in</td>
+                                            <td>+91 9962411053</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/lAST MAN STANDING.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">LAST MAN STANDING</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1 612 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17/SEP -09:00
+ - 11:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 100 per individual</h3>
+                                    <h3>Description</h3>
+                                    Gear up for a mock placement with the perfect choice of your tie! This event is all about getting you ready for your placements, testing the skills you need. Right foot forward, sell your amazing personality at this event!
+                                    “Get started, get formal, get ready for the real deal.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Awshmita Datta</td>
+                                            <td>-</td>
+                                            <td>+91 9543033454</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Apurva Singh</td>
+                                            <td>-</td>
+                                            <td>+91 8903829044</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sravan Kumar</td>
+                                            <td>-</td>
+                                            <td>+91 9087496980</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/FinalDestination.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">FINAL DESTINATION</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1 608,609,708 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16/SEP -09:00
+ - 11:00 &nbsp;&nbsp;&nbsp;17/SEP- 12:30-15:30
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 100 per team of 3</h3>
+                                    <h3>Description</h3>
+                                    "Ride in to experience “entertainment” in its true sense. A technical + fun-filled activity testing spontaneity, innovation, and thinking skills. Expect the unexpected..! 
+Major tip: Don't panic.
+"   
+“Zero coincidences. No Escapes.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Prashant</td>
+                                            <td>-</td>
+                                            <td>+91 9092951047</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Naveen</td>
+                                            <td>naveen.ks2014bec1016@vit.ac.in</td>
+                                            <td>+91 9486846925</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lokesh</td>
+                                            <td>lokesh.nrao2014@vit.ac.in</td>
+                                            <td>+91 8754421044</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ajay Kumar</td>
+                                            <td>-</td>
+                                            <td>+91 7032402927</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/Robomaze.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">ROBOMAZE</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1- 709, 710 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17/SEP -11:00
+ - 15:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 250 per team of 4</h3>
+                                    <h3>Description</h3>
+                                    Let innovation test you guidance and intuitive skills. Guide your line-follower bot through this labyrinth filled with twists and serpentine tracks. 
+“The hi-tech mouse and cheese maze.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="connectivitee_rulebook/ROBOMAZE.docx">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Garvit</td>
+                                            <td>-</td>
+                                            <td>+91 9654467133</td>
+                                        </tr>
+                                        <tr>
+                                            <td>akif</td>
+                                            <td>-</td>
+                                            <td>+91 9962411203</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/Electrocran.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">ELECTROCRAN</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1- 307 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17/SEP -11:00
+ - 14:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 100 per team of 2</h3>
+                                    <h3>Description</h3>
+                                    How lucky are your betting skills? How efficient are you with building circuits? Feeling confident with both?  Then grab a partner and dive into this classic game of brains and luck, Electrocran!
+“Luck is what happens when preparation meets opportunities.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="connectivitee_rulebook/ÈLÈCTROCRAN.docx">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Rujuta Barve</td>
+                                            <td>@vit.ac.in</td>
+                                            <td>+91 9223380868</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Phani Sandeep</td>
+                                            <td>@vit.ac.in</td>
+                                            <td>+91 8608656870</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Deepraj</td>
+                                            <td>@vitac.in</td>
+                                            <td>+91 9087777248</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath21">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/connectivitieee event pictures/posters/Electrogami.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">ELECTROGAMI</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3> Venue: AB1 307 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16/SEP -13:00
+ - 16:00
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs 50 per team of 2</h3>
+                                    <h3>Description</h3>
+                                    Electrogami seeks to promote inventive and artistic work, kindling the “tech”reativity in you. The main theme is moulding electrical and electronic waste into useful and imaginative things. This ONLINE EVENT STARTS 7-10 DAYS BEFORE TECHNOVIT’16. PHOTOGRAPHS OF MODELS MUST BE SUBMITTED BEFORE THE DEADLINE (13TH SEPTEMBER).  PARTICIPANTS MUST REGISTER BEFORE STARTING THEIR WORK.
+ “Wealth out of Waste – when a DSLR meets electrical engineering.”
+                                    <h3>Rules and Regulations</h3>
+                                    <a href="connectivitee_rulebook/rules electrogami.docx">The Rulebook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Akshay Kumar</td>
+                                            <td>-</td>
+                                            <td>+91 9092952902</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sivaram S</td>
+                                            <td>-</td>
+                                            <td>+91 9487650275</td>
+                                        </tr>
+                                    </table>
+                                    <!-- <br><br><br>
+                                    <div style="display:flex; align-items: center; justify-content: center;">
+                                        <img src="img/connectivitieee event posters/BITSNBYTES.png" height="650" width="1100">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- /content -->
+            
+        </div>
+        <!-- Related demos -->
+        <section class="content content--related">
+        </section>
+    </div>
+    <!-- /container -->
+    <!-- JS -->
+    <script src="js/vendors/trianglify.min.js"></script>
+    <script src="js/vendors/TweenMax.min.js"></script>
+    <script src="js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="js/vendors/cash.min.js"></script>
+    <script src="js/Card-polygon.js"></script>
+    <script src="js/demo-3.js"></script>
+    <script src="js/uiMorphingButton_fixed.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: 'JRUeV1z56S4',
+            events: {
+                'onPlayerReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            },
+            playerVars: {
+                rel: 0
+            }
+        });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = true;
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+
+    function stopVideo() {
+        player.stopVideo();
+    }
+
+    (function() {
+
+        new UIMorphingButton(document.querySelector('.morph-button'), {
+            closeEl: '.icon-close'
+        });
+    })();
+
+    function hideDiv() {
+        document.getElementById('menu-technovit').style.display = "none";
+    }
+
+    function showDiv() {
+        document.getElementById('menu-technovit').style.display = "block";
+    }
+    </script>
+    <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
+    <div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="qubit.html">Qubit - SCSE</a></li>
+            <li><a href="connectivitieee.html">Connectivitiee - SENSE and SELECT</a></li>
+            <li><a href="diseno.html">Dise&#241;o - SMBS</a></li>
+            <li><a href="taikuun.html">Tai:kuun - Business</a></li>
+            <li><a href="vitness.html">VITness - Law</a></li>
+            <li><a href="fashion.html">Glitz - Fashion</a></li>
+        </ul>
+    </div>
+    <div id="jq-dropdown-2" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="documents/day1.pdf">Day 1 Schedule</a></li>
+            <li><a href="documents/day2.pdf">Day 2 Schedule</a></li>
+            <li><a href="documents/day3.pdf">Day 3 Schedule</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

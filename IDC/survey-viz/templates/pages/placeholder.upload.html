@@ -1,0 +1,15 @@
+{% extends 'layouts/main.html' %} {% block title %}Upload{% endblock %} {% block content %}
+
+<div class="page-header">
+    <h1>Upload Page</h1>
+</div>
+
+<form method="post" enctype="multipart/form-data">
+    <p><input type="file" name="file">
+        <input type="submit" value="Upload">
+    </p>
+</form>
+
+
+
+{% endblock %}

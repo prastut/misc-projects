@@ -1,0 +1,11 @@
+bit = {
+    'key': '944c1dc225f0471a9a8b80e4451f4577',
+    'secret': 'b416257f939146ac9e08e5d9c99f6882'
+
+}
+
+pol = {
+    'key': 'WC1XTYN1-8A0PUQ5F-QOX3RG1F-P4MIZFNL',
+    'secret': '0f5d7589be5f06fda96923d16d8d7daa24631dc84921c741e74e580a234d951d8337aecb042a8ad65603a0be02ae7423c0844c5186221a3f54f6a333b90e22fd'
+
+}

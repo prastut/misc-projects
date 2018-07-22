@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The annual technical fest of VIT Universuty Chennai Campus">
+    <meta name="keywords" content="upcoming college festival, vit university,techfest, tech fest, technoVIT,technovit,technovit cultural events,informal events,technical events,formal events,symposium events,qubit,vitness,diseno,connectivitee,taikuun,glitz,vit,chennai,events website">
+    <meta name="author" content="krshubham, Kumar Shubham, prastut,Prastut Kumar,prashantkbhardwaj, Prashant Bhardwaj,Aman Saha,Prateek Singh,technovit, VIT University,Chennai">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vitness | technoVIT 2016 | VIT Chennai</title>
+    <meta name="description" content="Card Expansion Effect with SVG clipPath" />
+    <meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+    <meta name="author" content="Claudio Calautti for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/videomod.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.dropdown.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') & bull; - 1) {
+        var root = document.getElementsByTagName('html')[0];
+        root.setAttribute('class', 'ff');
+    };
+    </script>
+    <style>
+    body {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    h2 {
+        color: white
+    }
+    
+    .icon-list {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    
+    .img-fix {
+        display: inline-block;
+        float: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .headermenu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 5px 3px 5px #000;
+        margin-top: -15px;
+    }
+    
+    .headermenu ul a {
+        margin: 10px;
+        color: white;
+        list-style: none;
+    }
+    
+    .headermenu ul a:hover {
+        margin: 10px;
+        color: #e2292a;
+        list-style: none;
+    }
+    </style>
+    <!--style>
+        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+        .embed-container iframe, .embed-container object, .embed-container embed { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style-->
+</head>
+
+<body class="demo-3">
+    <div class="container">
+        <div class="menu-wrap">
+            <nav class="menu-top">
+                <div class="profile"><img class="img-fix" src="img/logo.png" alt="TechnoVIT" /><span></span></div>
+                <div class="icon-list">
+                    <a href="../new-index.html">Home</a>
+                    <a href="technovit.html"> technovit'16</a>
+                    <a href="http://technovit.itechnospot.com/"> Registrations</a>
+                    <a href="../Schedule_technovit'16.pdf"> Schedule</a>
+                    <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                    <a href="team.html">Patrons</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                    <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                </div>
+            </nav>
+            <nav class="menu-side">
+                <a href="qubit.html"><i class="fa fa-fw fa-star-o"></i> Qubit</a>
+                <a href="connectivitieee.html"><i class="fa fa-fw fa-star-o"></i> ConnectiVITieee</a>
+                <a href="diseno.html"><i class="fa fa-fw fa-star-o"></i> Dise&#241;o</a>
+                <a href="vitness.html"><i class="fa fa-fw fa-star-o"></i> VITness</a>
+                <a href="taikuun.html"><i class="fa fa-fw fa-star-o"></i> Tai:kuun</a>
+                <a href="fashion.html"><i class="fa fa-fw fa-star-o"></i>Fashion</a>
+                <!-- <a href="informal.html"><i class="fa fa-fw fa-star-o"></i> Informal/Gaming</a> -->
+            </nav>
+        </div>
+        <a class="menu-button" id="open-button"></a>
+        <div class="content-wrap">
+            <div class="content">
+                <div class="mymenu">
+                    <header class="headermenu">
+                        <ul style="height: 59px;">
+                            <div style=" position: absolute; z-index: 10000; left: 0; padding-left: 20px;">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                            <a href="../new-index.html">Home</a>
+                            <a href="technovit.html"> technovit'16</a>
+                            <a href="http://technovit.itechnospot.com/"> Registrations</a>
+                            <a href="../Schedule_technovit'16.pdf"> Schedule</a>
+                            <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                            <a href="team.html">Patrons</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                            <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                            <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+
+                            <div style=" position: absolute; z-index: 99; right: 0; padding-right: 10px;margin-top:-9px!important;">
+                                <img src="img/vitcc.png" width="130" height="58" style="box-shadow: none !important;" id="logo-technovit">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                        </ul>
+                    </header>
+                </div>
+                <h2 align="center"><img src="img/logo.png"/></h2>
+                <h2 align=center style="font-color">VITness</h2>
+                <h2 align=center style="font-color">September 15th-17th, 2016</h2>
+                <!-- trianglify pattern container -->
+                <div class="pattern pattern--hidden"></div>
+                <!-- cards -->
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath1">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/vitness/summit.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title" style="color:black;">Leadership Summit 2016</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Date :16th and 17th Sept'16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time:10:00AM to 5:00PM<br>Venue:7th Floor Conference Hall Academic block <br>
+                                    Rs.800 ( without Acco) Rs.1800 ( With Acco)</h3>
+                                    <h3>Description</h3> VITness Leadership Summit 2016 is the academic simulation of Governmental and Parliamentary Councils of the Nation represented by individuals to act as delegates and deliberate upon agendas relevant to national policies. The delegates will be tested and analysed based on their knowledge about the agenda as well as their diplomatic behaviour during the summit. Fruitful discussions and debates may be expected during the entire Summit. Finally yet importantly, it urges delegates to come up with solid resolutions for the agenda at hand. HAPPY DEBATING!
+                                    <p></p> 
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>AKANKSHA RAVI</td>
+                                            <td>akanksha.ravi@yahoo.in</td>
+                                            <td>+91 8870954047</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ROHITH SANTHOSH</td>
+                                            <td>rohithrsanthosh@gmail.com</td>
+                                            <td>+91 9446650078</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                            <img src="img/vitness/leader.jpg" height="650" width="1100">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath2">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/vitness/ps.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Public Policy Meet</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Date :17th Sept'16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time:10:00AM to 5:00PM<br>Venue:Library-Discussion Room<br>Rs. 500 (team of 2)</h3>
+                                    <p>How would you feel to step into the shoes of the country’s Cabinet for one single day and frame policies that could revolutionize the entire world? VIT School of Law is extremely honoured to announce the VITness PUBLIC POLICY MEET 2016. In this era of globalization, it is unfortunate that we see most of the policies failing all over the globe, not because they lack deliberations but because they lack the other core components of resources, resource allocations and, in other cases, implementation. So, it’s time to wrack your brains to solve the unsettled issues effectively to bring about a change. Our motto is “Dream it, Do it”! The main objective of this event is to give the participants a chance to voice out their vision for a better world,by analyzing socio legal problems, and formulating policies that can be effectively implemented.
+                                    </p>
+                                    <h3>Rules and Regulations: </h3>
+                                       <a href="vitness_rulebook/public policy.pdf">RuleBook</a>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:90%">
+                                        <tr>
+                                            <td>Adyasree Prakriti Sivakumar </td>
+                                            <td>adyasreeprakriti96@gmail.com </td>
+                                            <td>+91 8056240731</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aravind P</td>
+                                            <td>aravind6945@gmail.com</td>
+                                            <td>+91 9952606501</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath3">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/vitness/qwiz.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Q-Wiz</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Date:17th Sept'16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time:10:00AM to 2:00PM<br>Venue:5th Floor Admin Block, Seminar Hall<br>Rs.300 team of two.</h3>
+                                    <h3>Description:</h3>
+                                    <p>How would it feel to compete among the best and be questioned by the best of the best? Conducted as a part of VITness with cash prizes up to ₹15,000 up for grabs, VITness Q-WIZ is THE event where all the quizzing aficionados would want to be. The questions compose of an extensive range of topics which will assuredly assess your grey matter. Technology has taken over our lives to an extent where the ‘Internet’ has stultified the intellect and made us depend on it. Q-WIZ aims to overthrow your dependence and rack your brain to empower your intellect. Engage and Empower.</p>
+                                    <br>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Vedha Vel</td>
+                                            <td>vedhavel1996@gmail.com</td>
+                                            <td>+91 9444306908</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shweta Iyer</td>
+                                            <td>shwetapiyer@gmail.com</td>
+                                            <td>+91 9789939183</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                            <img src="img/vitness/Q-wiz.jpg" height="650" width="1100">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath3">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/vitness/aperture.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Aperture</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Date:15th Sept'16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time:10:00AM to 5:00PM<br>Venue:5th Floor Seminar Hall Admin Block <br>Registration fee:Rs.750 per team</h3>
+                                    <h3>Description:</h3>
+									<p>In today’s film climate it is hard to showcase short films and documentary. Many events only care about features and it seems like thisart is dwindling to silly videos. We are looking for the best short films and documentaries locally and nationally. The Aperture 2K16 strives to showcase up and coming film makers at the local and national level who strive to advance the art of film making. The Aperture event is an exciting and unique event held annually in VIT University, Chennai Campus. The festival has garnered the support of some of the most respected and well known celebrities in the country. With a focus on fostering emerging film makers, boosting the economy and general awareness among the youth community, the event encourages in bringing out the talents of the young minds of the country.</p>
+                                    <h3>Rules and Regulations:</h3>
+                                       <a href="vitness_rulebook/aperture.docx">RuleBook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Kiran</td>
+                                            <td>kiranuma.uma@gmail.com</td>
+                                            <td>+91 9944399902</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                            <img src="img/vitness/2k16.jpg" height="650" width="1100">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath4">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/vitness/debate.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Disputio</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Date:16th Sept'16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time:10:00AM to 5:00PM<br>Venue:7th Floor-Admin Block<br> 
+                                     Registration fee:Rs.600 for team of Three.</h3>
+                                    <h3>Description:</h3>
+                                    <p>‘Do you think that you are good with words? Do you think that you can convince people with  your arguments?’
+									   If you think you can, then buckle up! Come prove your mettle in one of the finest happening tournament this year.    
+                                    <br> 
+                                    </p>
+                                    <h3>Rules and Regulations: </h3>
+                                        <a href="vitness_rulebook/debate.docx">RuleBook</a>
+                                    <br>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Hisham Abdus Salam</td>
+                                            <td>hisham.salam2@gmail.com</td>
+                                            <td>+91 9940499867</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shubham Porwal </td>
+                                            <td>shubam.porwal@gmail.com</td>
+                                            <td>+91 9345450000</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                            <img src="img/vitness/Disputio.jpg" height="650" width="1100">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath4">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/vitness/crimescene.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Crime Investigation 2016</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Date:17th Sept'16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time:10:00AM to 3:00PM<br>Venue:7th Floor- Admin Block<br>Rs.150 for an individual <br>Rs.350 for a team of three</h3>
+                                    <h3>Description:</h3>
+                                    <p>Do you want to be Sherlock, Castle and all that you imagine to be? Want to investigate a crime scene? Then, you will be on the right path by attending our event on 17th Sept'd make your dream of being a detective turn into reality.
+									A day filled with adrenaline rush, as you get into the shoes of a cop and hunt the killer by tracking the clues, witness and hunting that sole person behind the crime committed. The thrill gets DOUBLE this time, with double trouble, i.e.; two levels (Prelims and Finals) and double the fun. Brace yourself and get ready for the event. Bring out the Detective in you!
+                                    </p>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Swetha Sethuraman </td>
+                                            <td>swetharaman05@yahoo.com</td>
+                                            <td>+91 9043088059</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sivasubramanian</td>
+                                            <td>+91 7299570964</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                            <img src="img/vitness/crime.jpg" height="650" width="1100">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /cards -->
+            </div>
+            <!-- /content -->
+        </div>
+        <!-- Related demos -->
+        <section class="content content--related">
+        </section>
+    </div>
+    <!-- /container -->
+    <!-- JS -->
+    <script src="js/vendors/trianglify.min.js"></script>
+    <script src="js/vendors/TweenMax.min.js"></script>
+    <script src="js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="js/vendors/cash.min.js"></script>
+    <script src="js/Card-polygon.js"></script>
+    <script src="js/demo-3.js"></script>
+    <script src="js/uiMorphingButton_fixed.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: '_xFZcq-x7tw',
+            events: {
+                'onPlayerReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            },
+            playerVars: {
+                rel: 0
+            }
+        });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = true;
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+
+    function stopVideo() {
+        player.stopVideo();
+    }
+
+    (function() {
+
+        new UIMorphingButton(document.querySelector('.morph-button'), {
+            closeEl: '.icon-close'
+        });
+    })();
+    </script>
+    <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
+    <div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="qubit.html">Qubit - SCSE</a></li>
+            <li><a href="connectivitieee.html">Connectivitiee - SENSE and SELECT</a></li>
+            <li><a href="diseno.html">Dise&#241;o - SMBS</a></li>
+            <li><a href="taikuun.html">Tai:kuun - Business</a></li>
+            <li><a href="vitness.html">VITness - Law</a></li>
+            <li><a href="fashion.html">Glitz - Fashion</a></li>
+        </ul>
+    </div>
+    <div id="jq-dropdown-2" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="documents/day1.pdf">Day 1 Schedule</a></li>
+            <li><a href="documents/day2.pdf">Day 2 Schedule</a></li>
+            <li><a href="documents/day3.pdf">Day 3 Schedule</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

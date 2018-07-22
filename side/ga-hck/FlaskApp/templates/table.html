@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+
+<body>
+
+    <p>
+        {{url}}
+    </p>
+    <br>
+    <form action="{{url_for('letshit')}}" method="post">
+        <table border="10" align="center">
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+            {% for key, value in params: %}
+            <tr>
+                <td>
+                    {{key}}
+                </td>
+                <td>
+                    <input type="text" name="{{key}}" value="{{value}}" size="50">
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+
+        <input type="submit">
+    </form>
+
+
+</body>

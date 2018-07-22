@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The annual technical fest of VIT Universuty Chennai Campus">
+    <meta name="keywords" content="upcoming college festival, vit university,techfest, tech fest, technoVIT,technovit,technovit cultural events,informal events,technical events,formal events,symposium events,qubit,vitness,diseno,connectivitee,taikuun,glitz,vit,chennai,events website">
+    <meta name="author" content="krshubham, Kumar Shubham, prastut,Prastut Kumar,prashantkbhardwaj, Prashant Bhardwaj,Aman Saha,Prateek Singh,technovit, VIT University,Chennai">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dise&#241;o | technoVIT 2016 | VIT Chennai</title>
+    <meta name="description" content="Card Expansion Effect with SVG clipPath" />
+    <meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+    <meta name="author" content="Claudio Calautti for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/videomod.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.dropdown.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <script>
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+            var root = document.getElementsByTagName('html')[0];
+            root.setAttribute('class', 'ff');
+        };
+    </script>
+    <style>
+        h2 {
+            color: white
+        }
+
+        .icon-list {
+            font-size: 14px;
+            margin-top: -10px;
+        }
+
+        .img-fix {
+            display: inline-block;
+            float: left;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .headermenu ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 40px;
+            padding-top: 10px;
+            background-color: rgba(0, 0, 0, 1);
+            box-shadow: 5px 3px 5px #000;
+            margin-top: -15px;
+        }
+
+        .headermenu ul a {
+            margin: 10px;
+            color: white;
+            list-style: none;
+        }
+
+        .headermenu ul a:hover {
+            margin: 10px;
+            color: #e2292a;
+            list-style: none;
+        }
+
+        @media(max-width:768px) {
+            #menu-technovit {
+                display: none;
+            }
+        }
+    </style>
+    <!--style>
+        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+        .embed-container iframe, .embed-container object, .embed-container embed { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        </style-->
+    </head>
+
+    <body class="demo-3">
+        <div class="container">
+            <div class="menu-wrap">
+                <nav class="menu-top">
+                    <div class="profile"><img class="img-fix" src="img/logo.png" alt="TechnoVIT" /><span></span></div>
+                    <div class="icon-list">
+                        <a href="../new-index.html">Home</a>
+                        <a href="technovit.html"> technovit'16</a>
+                        <a href="http://technovit.itechnospot.com/"> Registrations</a>
+                        <!-- <a href="../Schedule_technovit'16.pdf"> Schedule</a> -->
+                        <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                        <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                        <a href="team.html">Patrons</a>
+                        <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a>
+                        <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                        <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                        <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                    </nav>
+                    <nav class="menu-side">
+                        <a href="qubit.html"><i class="fa fa-fw fa-star-o"></i> Qubit</a>
+                        <a href="connectivitieee.html"><i class="fa fa-fw fa-star-o"></i> ConnectiVITieee</a>
+                        <a href="diseno.html"><i class="fa fa-fw fa-star-o"></i> Dise&#241;o</a>
+                        <a href="vitness.html"><i class="fa fa-fw fa-star-o"></i> VITness</a>
+                        <a href="taikuun.html"><i class="fa fa-fw fa-star-o"></i> Tai:kuun</a>
+                        <a href="fashion.html"><i class="fa fa-fw fa-star-o"></i>Fashion</a>
+                        <!-- <a href="gaming.html"><i class="fa fa-fw fa-star-o"></i> Informal/Gaming</a> -->
+                    </nav>
+                </div>
+                <a class="menu-button" id="open-button" onclick="hideDiv()"></a>
+                <div class="content-wrap" id="main-content" onclick="showDiv()">
+                    <div class="content">
+                        <div class="mymenu" id="menu-technovit">
+                            <header class="headermenu">
+                                <ul style="height: 59px;">
+                                    <div style=" position: absolute; z-index: 10000; left: 0; padding-left: 20px;">
+                                        <!-- <section class="Panel Panel--intro"> -->
+                                    </div>
+                                    <a href="../new-index.html">Home</a>
+                                    <a href="technovit.html"> technovit'16</a>
+                                    <a href="http://technovit.itechnospot.com/"> Registrations</a>
+                                    <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                                    <a href="team.html"> TT</a>
+                                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a>
+                                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                                    <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                                    <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                                    <div style=" position: absolute; z-index: 99; right: 0; padding-right: 10px;margin-top:-9px!important;">
+                                        <img src="img/vitcc.png" width="130" height="58" style="box-shadow: none !important;" id="logo-technovit">
+                                        <!-- <section class="Panel Panel--intro"> -->
+                                    </div>
+                                </ul>
+                            </header>
+                        </div>
+                        <h2 align="center"><img src="img/logo.png"/></h2>
+                        <h2 align=center style="font-color">Dise&#241;o</h2>
+                        <h2 align=center style="font-color">Sept 15th, 2016</h2>
+                        <!-- trianglify pattern container -->
+                        <div class="pattern pattern--hidden"></div>
+                        <!-- cards -->
+                        <div class="wrapper">
+
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath1">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/diseno/expo.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Auto Expo</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: MBA Parking, Time: 10th September 9:30AM to 4:00PM</h3>
+                                            <h3>Fee: Dynamic pricing</h3>
+                                            <h3>Description</h3>An exhibition of exotic cars and bikes
+                                            <h3>Rules and Regulations</h3>
+                                            <br>
+                                            &bull; You won't be allowed to touch or sit in the cars.
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Aditya Aryan</td>
+                                                    <td></td>
+                                                    <td>+91 8754563801</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Venkat Teja</td>
+                                                    <td></td>
+                                                    <td>+91 9176067878</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath2">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/diseno/optimize.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">Diseno Modellers</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: Workshop and SoM Lab, GF, AB-101; Date: 15TH SEPTEMBER</h3>
+                                            <h3>Fee: Rs 2000</h3>
+                                            <h3>Description:</h3>
+                                            <p>"Session 1: We will begin with workshop by guest which will start from 9 am till 5 pm in between 2 hr break will be provided. Session 2: In this session problem statement will be provided from that they have to design the structure and have to do the analysis and be ready to fabricate the design it will start from 7pm till 11pm. Session 3: In this session as per design they have to fabricate the structure as per dimensions and weight materials will be provided it will begin from 11 pm till 4am. 25k prizes is to be won…"</p>
+                                            <h3>Rules and Regulations: </h3>
+                                            &bull; None<br>
+                                            <h3>Event Co-ordinator:</h3>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td>Aditya Rohtagi</td>
+                                                    <td></td>
+                                                    <td>+91 9432573526</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Shubham Shanu</td>
+                                                    <td></td>
+                                                    <td>+91 9471011679</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath3">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/diseno/clockwork.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">ETABS</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB 507 Date: 11<sup>th</sup> Sep, Time: Full day</h3>
+                                            <h3>Fee: Rs 500 per person</h3>
+
+                                            <h3>Description:</h3>
+                                            <p>ETABS is structural analysis software that is widely used in various industries for reinforced structures. Our faculty has taken up the initiative to provide the students a with hands on experience of the software. The workshop will be a 6 hours long session divided in two parts. The first part will consist of a theory  Class and following that there will be a hands on session.                     The students will learn software through this workshop and hopefully they will be able to  Analyse a building after that.
+                                            </p>
+                                            <h3>Rules and Regulations: </h3>
+                                            &bull; None<br>
+                                            <h3>Event Co-ordinator:</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Kshitij Chaudhari</td>
+                                                    <td>+91 9092807295</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath4">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/diseno/3d.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">3D Printing Workshop</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: ADMIN BLOCK - 5th Floor; Date: 9th September</h3>
+                                            <h3>Fee: Rs 500</h3>
+
+                                            <h3>Description:</h3>
+                                            <p>Workshop teaching 3D printing.</p>
+                                            <h3>Rules and Regulations: </h3>
+                                            &bull; None. <br>
+                                            <h3>Event Co-ordinator:</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Vaibhav Chandran</td>
+                                                    <td></td>
+                                                    <td>+91 9560126036</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath5">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/diseno/automotive.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Automotive Workshop</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB101, Garage, Date: 12-13 Sep, Time: 10:00 AM - 4:00PM</h3>
+                                            <h3>Fee: Rs 300</h3>
+
+                                            <h3>Description</h3> Workshop focused on all the technical aspects of automobiles where the members of the college racing teams will  provide their knowledge and the participants will get a chance to get first hand experience in the garage.  
+
+                                            <br>
+                                            <h3>Rules and Regulations</h3> 
+                                            &bull;
+                                            Refrain from touching anything without the permission from the team.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Aditya Aryan</td>
+                                                    <td></td>
+                                                    <td>+91 8754563801</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/diseno/solidworks.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">Solidworks (For Dummies)</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB 507; Date: 7th and 8th September</h3>
+                                            <h3>Fee: Rs 200 per person</h3>
+
+                                            <h3>Description</h3> Workshop teaching solidworks including 2D drawing, 3D modeling and Assembly. 
+                                            <br>
+                                            <h3>Rules and Regulations</h3> 
+                                            &bull; OD and certificates will not be provided if you will be absent.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td>Siddharth Mohanty</td>
+                                                    <td></td>
+                                                    <td>+91 9962413763</td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath7">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath7)" width="1920" height="500" xlink:href="img/diseno/poster.png"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">MS Project</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB 507, Date: 16 Sep, Time: Full day.</h3>
+                                            <h3>Fee: Rs 500 per person</h3>
+
+                                            <h3>Description</h3>The main objective of this workshop is to apprehend the concept of “construction project scheduling” using one of the most popular and leading cutting edge project management software Microsoft Project 2013. 
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull;
+                                            None.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td>Kshitij Chaudhary</td>
+                                                    <td></td>
+                                                    <td>+91 9092807295</td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath8">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath8)" width="1920" height="500" xlink:href="img/diseno/revit.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">REVIT</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB507 / AB406, Date: 9 Sep, Time: Full Day</h3>
+                                            <h3>Fee: Rs 750</h3>
+
+                                            <h3>Description</h3> The participants will be taught to use the mentioned software in and out. They will be provided with a hands on experience so that they have a vivid experience. The workshop will be held on different levels based on the preliminary knowledge of the participants. The students are free to join from the second or third level, if they feel confident about the previous levels. The workshop is being conducted in collaboration with a coaching institute CADD CENTRE. 
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull;
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td>Kamal Gupta </td>
+                                                    <td></td>
+                                                    <td>+91 7358540043</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/mini.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Mini Militia</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB511; Date: 15th and 16th September</h3>
+                                            <h3>Fee: Rs 200 , Team of 5</h3>
+
+                                            <h3>Description</h3> Compete with other mini militia freaks and prove your team is the best of the lot.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; Coin toss is used to decide which map is to be selected. 
+                                            <br> &bull;Game mode : Team Death
+                                            <br> &bull; In the incident of tie the other team gets to choose the map of rematch.
+                                            <br> &bull; Any competitor or team attempting to use any exploit in a map shall be immediately disqualified or removed from the event. 
+
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Mohak Puri</td>
+                                                    <td></td>
+                                                    <td>+91 9962280645</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/joker.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Impratical Jokers</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB Portico; Date: All Dates</h3>
+                                            <h3>Fee: Rs 200 group of 3</h3>
+
+                                            <h3>Description</h3> A group of 3 people giving each other tasks to have fun.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; 1.  Physical abuse and vulgar tasks will result in disqualification. 
+                                            <br> &bull; 2. The given number of tasks should be completed before the opponent team and should be filmed.
+
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Vaibhav Chauhan</td>
+                                                    <td></td>
+                                                    <td>9790719654</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/hoop.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Reuleaux hoops</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: Hockey ground; Date: 16 and 17 Sept, Time: 2 PM to 5 PM</h3>
+                                            <h3>Fee: Rs 500 team of 5</h3>
+
+                                            <h3>Description</h3>  2 teams of 5 battle it out to score points by projecting balls into hoops arranged in the shape of Reulex Triangle.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; 1. Speaking the opponents’ words before the challenge is over results in disqualification.  
+                                            <br>
+                                            <h3> &bull; 2. All participants must install the PSYCH app in their devices which they use for playing.</h3>
+                                            <h3>
+                                                &bull; 3. Two participants will be eliminated in each round after the fifth round. 
+                                            </h3>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Siddharth Mohanty</td>
+                                                    <td></td>
+                                                    <td>9962413763</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/hoops.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Psych</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB1 510; Date: 16TH AND 17TH SEPT</h3>
+                                            <h3>Fee: Rs.50 per person</h3>
+
+                                            <h3>Description</h3>  2 teams of 5 battle it out to score points by projecting balls into hoops arranged in the shape of Reulex Triangle.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; 1. Speaking the opponents’ words before the challenge is over results in disqualification.  
+                                            <br>
+                                            &bull; 2. All participants must install the PSYCH app in their devices which they use for playing.<br />
+                                            &bull; 3. Two participants will be eliminated in each round after the fifth round. 
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Jeof George</td>
+                                                    <td>02:00 PM to 05:30PM</td>
+                                                    <td>9930350484</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/fluid.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">Fluid fling</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB Portico; Date: 15TH AND 16TH SEPT, Time: Full Day</h3>
+                                            <h3>Fee: 50 per person</h3>
+
+                                            <h3>Description</h3>  Two contestants shall compete to throw a ball in perfect projectile in a drinkable fluid. Succeeding in which the opponent will have to consume that fluid.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; 1. Changing the position of the target is not allowed. <br> &bull; 2. Distracting the opponent is not allowed.<br> &bull;3. Refusal to drink the liquid leads to disqualification.  
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Rahul Vaneer</td>
+                                                    <td></td>
+                                                    <td>8608603587</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/bee.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">Spell Bee</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB1 402; Date: 16TH SEPT, Time: 2:00 PM to 5:00 PM</h3>
+                                            <h3>Fee: 150 per person</h3>
+
+                                            <h3>Description</h3>  Mind numbing dictionary churning game of words.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; 1. Oxford Dictionary will be followed. <br> &bull;2. No use of internet.<br> &bull; 3. Copying of spellings in preliminary round will be considered as malpractice.<br /> &bull; 4. Judges decision will be final and non-negotiable. <br />&bull; 5. Phonetic mistakes will be overseen to a certain limit.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Saarthak Shah</td>
+                                                    <td></td>
+                                                    <td>9962405376</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/auto.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Automotive quiz</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB1 402; Date: 16TH SEPT and 17th SEPT,Time: 10:30 AM to 12:30PM</h3>
+                                            <h3>Fee: 250 group of 3</h3>
+
+                                            <h3>Description</h3>The questions will be asked in the areas related to automobile such as evolution and history of automobile, current affairs, technical aspects and terms related to automobile.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; Normal Quiz Rules. (Will be announced at the time of the event.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Shubham Mehra</td>
+                                                    <td></td>
+                                                    <td>8754563801</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/auto quiz.png"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Contraption</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB1 503; Date: 17th SEPT,Time: 2:00 PM to 5:00 PM</h3>
+                                            <h3>Fee: 300 group of 3</h3>
+
+                                            <h3>Description</h3>The questions will be asked in the areas related to automobile such as evolution and history of automobile, current affairs, technical aspects and terms related to automobile.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; Normal Quiz Rules. (Will be announced at the time of the event.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Karsh Sharma </td>
+                                                    <td></td>
+                                                    <td>8124345395</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/jugaad.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">Jugaad from Kabaad</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB1 601/602; Date: 17th Sept, Time: All Day.</h3>
+                                            <h3>Fee: 200 group of 4</h3>
+
+                                            <h3>Description</h3>All the innovative people out there! The event that you’ve been looking for is here. ‘JUGAAD FROM KABAAD’ will not only provide you a great platform to showcase your innovative mind but will also throw up some challenges that will make you brain twitch and think twice before you make a move. The event mainly focuses on the innovative skillset of a group of participants and converts something that many of us consider as waste or kabaad to something new and unique.  It will compel you to think out of box.  The groups participating in the event have to complete their innovation within 90 minutes with the kabaad  Provided to them as per their selection of items. 
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; To be announced during the event
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Somesh ,Harsh</td>
+                                                    <td></td>
+                                                    <td>7772828547,9958443304</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/industrial.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Industrial Problem Solving</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB1 4TH /5TH FLOOR CLASS; Date: 16th Sept, Time: Full Day</h3>
+                                            <h3>Fee: 200 group of 2</h3>
+
+                                            <h3>Description</h3>The aim of IPSW is to create a mutually beneficial link between industry and academics.  Problems which are faced by industries are discussed and solved. Problems can come from a wide.  Variety of subject areas and should be discussed and solved by teams by their study and analysis.  Every team has to give their solutions on the basis of their ideas and study.  Special faculty and advisors are invited to judge the teams on the basis of their response towards the problem.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; To be announced during the event.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td> Yuddhaveer </td>
+                                                    <td></td>
+                                                    <td>9790704422</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/innovation.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Urbanismo</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB1 507; Date: 17th Sep, Time: Full Day.</h3>
+                                            <h3>Fee: 200 group of 2</h3>
+
+                                            <h3>Description</h3>This event is to check the thinking power and creativity with innovative ideas in the field of modern  Urban planning. The participants will be given task to make and design through using autocad software.   This will help them to think out of box. We as a student want to fly high, high and high into the sky and for it,  We should have creative ideas and must learn to use software because we believe in making of opportunity,  not waiting of opportunity so AutoCAD makes an opportunity. 
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; To be announced during the event.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td> Partho mukherjee </td>
+                                                    <td></td>
+                                                    <td>9791334044</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/build.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Build to Destroy</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB1 Amphi; Date: 16th and 17th Sept, Time: 1:00 PM to 4:00 PM</h3>
+                                            <h3>Fee: 300 group of 3</h3>
+
+                                            <h3>Description</h3> This event is about making the tallest and the strongest building within the given time limit with given materials,  such that it should not fall down on hitting it with a ball. Round 1 – Two teams will be provided with bricks, empty tin cans, plywood,  pepsi bottles. Their task is to make the tallest building possible in given time limit of 90 seconds using all the materials provided. Round 2 – Team A will take there shot at team B building and vice versa. Each team will get 3 chance to destroy opponents building by tennis ball . The points for  building with particular object and to destroy the same will be decided later. And in the final round players will be blind folded while taking  3 shots or the game will be made more difficult at each successive round. Rules: 1. Only three chance will be given for knocking to each team.  2. Only 90 sec will be given to build. 3.  The team with maximum points after both rounds wins.  
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; As per the Judges wish.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td> Akash srivastava, Vikas Kumar Mishra  </td>
+                                                    <td></td>
+                                                    <td>7565082163 ,  8423535121</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/poster.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">Poster Presentation</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB1502; Date: 16th Sept, Time: 9:00 AM to 01:00 PM </h3>
+                                            <h3>Fee: 200 group of 2</h3>
+
+                                            <h3>Description</h3> Poster Presentation
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; To be anonounced by the judges.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td> Praveen Reddy  </td>
+                                                    <td></td>
+                                                    <td>9731999513</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/baloon.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:black;">Catch the Bouncing fluid</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB Round Amphi; Date: All three days, Time: 01:00 PM to 04:00 PM</h3>
+                                            <h3>Fee: 250 group of 5</h3>
+
+                                            <h3>Description</h3> Every round consist of 10 teams and every team will have 4 members, they will be made to sit in a circular round and they will be provided with balloons filled with water and they have to circulate the balloon while keeping in mind that the balloon don’t touch the ground or bursts. If the team completes a round without bursting or touching the ground they will be given a point and if not, they will be provided with another one and so on. There is a time limit of 5 minutes. The team with most number of points will be declared as winner among the ten teams. Winner from every group will qualify for second round. Best among them will be declared as winner.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; To be anonounced.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td> virender sharma  </td>
+                                                    <td></td>
+                                                    <td>9092959774</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/photo.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Shutter Flutter</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: AB Portico; Date: All three days, Time: Full Day</h3>
+                                            <h3>Fee: 50/80/100; Individual/Group of 2 / Group of 3</h3>
+
+                                            <h3>Description</h3> Click pictures around the campus and be judged for the best picture. 
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; 1. Date and time of photos should be presented if asked to.<br />&bull; 2.  15 minutes will be allotted to a group.<br />&bull;3. Only one photographer per group.<br />&bull; 4. Only the photos taken in the time frame will be given to the participants. 
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td> Ujjwal Mishra  </td>
+                                                    <td></td>
+                                                    <td>9087777349</td>
+                                                    
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/photo.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Tension Torsion</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: Handball Ground; Date: 16th and 17th sept, Time: 01:00Pm to 04:00PM</h3>
+                                            <h3>Fee: 250 team of 5</h3>
+
+                                            <h3>Description</h3> Two teams will apply tension and torsion force on the rope to pull the other team to their side.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull;To be given by the judges
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td> Kamal Gupta  </td>
+                                                    <td></td>
+                                                    <td>7358540043</td>
+                                                    
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath9">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/diseno/photo.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title" style="color:white;">Techno Expedition</h2>
+                                        </div>
+                                        <div class="card__copy">
+                                            <h3>Venue: Clock Tower; Date: 16th and 17th Sept, Time: 10:00 AM to 01:00 PM</h3>
+                                            <h3>Fee: 300 team of 3</h3>
+
+                                            <h3>Description</h3> Ever played treasure hunt? This will be a regular treasure hunt with technical twist. The clues will require technical knowledge of basic physics,chemistry and mathematics.
+                                            <br>
+                                            <h3>Rules and Regulations</h3> &bull; To be announced by the judges.
+                                            <br>
+                                            <h3>Event Co-ordinator</h3>
+                                            <table style="width:80%">
+                                                <tr>
+                                                    <td>Pallavit Bisht </td>
+                                                    <td></td>
+                                                    <td>9790722826</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Related demos -->
+                    <section class="content content--related">
+                    </section>
+                </div>
+                <!-- /container -->
+                <!-- JS -->
+                <script src="js/vendors/trianglify.min.js"></script>
+                <script src="js/vendors/TweenMax.min.js"></script>
+                <script src="js/vendors/ScrollToPlugin.min.js"></script>
+                <script src="js/vendors/cash.min.js"></script>
+                <script src="js/Card-polygon.js"></script>
+                <script src="js/demo-3.js"></script>
+                <script src="js/uiMorphingButton_fixed.js"></script>
+                <script src="js/classie.js"></script>
+                <script src="js/main.js"></script>
+                <script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player;
+
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    height: '390',
+                    width: '640',
+                    videoId: 'E8AWV7jpJeY',
+                    events: {
+                        'onPlayerReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    },
+                    playerVars: {
+                        rel: 0
+                    }
+                });
+            }
+
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+                event.target.playVideo();
+            }
+
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = true;
+
+            function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                    setTimeout(stopVideo, 6000);
+                    done = true;
+                }
+            }
+
+            function stopVideo() {
+                player.stopVideo();
+            }
+
+            (function() {
+
+                new UIMorphingButton(document.querySelector('.morph-button'), {
+                    closeEl: '.icon-close'
+                });
+            })();
+
+            function hideDiv() {
+                document.getElementById('menu-technovit').style.display = "none";
+            }
+
+            function showDiv() {
+                document.getElementById('menu-technovit').style.display = "block";
+            }
+        </script>
+        <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
+        <div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip">
+            <ul class="jq-dropdown-menu">
+                <li><a href="qubit.html">Qubit - SCSE</a></li>
+                <li><a href="connectivitieee.html">Connectivitiee - SENSE and SELECT</a></li>
+                <li><a href="diseno.html">Dise&#241;o - SMBS</a></li>
+                <li><a href="taikuun.html">Tai:kuun - Business</a></li>
+                <li><a href="vitness.html">VITness - Law</a></li>
+                <li><a href="fashion.html">Glitz - Fashion</a></li>
+            </ul>
+        </div>
+        <div id="jq-dropdown-2" class="jq-dropdown jq-dropdown-tip">
+            <ul class="jq-dropdown-menu">
+                <li><a href="documents/day1.pdf">Day 1 Schedule</a></li>
+                <li><a href="documents/day2.pdf">Day 2 Schedule</a></li>
+                <li><a href="documents/day3.pdf">Day 3 Schedule</a></li>
+            </ul>
+        </div>
+    </body>
+
+    </html>

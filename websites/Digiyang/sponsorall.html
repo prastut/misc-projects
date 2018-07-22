@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DigiYang</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Prastut Kumar" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <script src="js/modernizr.custom.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/flickity.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/stylessponsor.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <script src="http://www.parsecdn.com/js/parse-1.6.12.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- open/close -->
+        <header>
+            <section class="hero">
+                <div class="texture-overlay"></div>
+                <div class="container">
+                    <div class="row nav-wrapper">
+                        <div class="col-md-6 col-sm-6 col-xs-6 text-left">
+                            <a href="#" style="font-size: 20px; color: #fff">DigiYang</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+                            <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+                        </div>
+                    </div>
+                    <div class="row hero-content">
+                        <div class="col-md-12">
+                            <h1 class="animated fadeInDown">College proposal waala page</h1>
+                            <a href="#" class="use-btn animated fadeInUp">About Us<i class="fa fa-arrow-down"></i></a>
+                            <!--<a href="sponsorall.html" class="learn-btn animated fadeInUp">Belong to a college society? Click here</a>-->
+                            <a href="sponsorall.html" class="learn-btn animated fadeInUp">Connect with colleges</a>
+                            <a href="#" class="learn-btn animated fadeInup">Connect with companies</a>
+                        </div>
+                  <!--   <div class="col-md-6">
+                        <form style="margin-top:320px">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">File input</label>
+                                <input type="file" style="display: none" id="exampleInputFile">
+                            </div>
+                            <a href="#" class="download-btn text-center">Upload<i class="fa fa-upload"></i></a>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="screenshots-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="upload-proposal">
+                    <h1>Upload your college proposal here</h1>
+                    <p>Some more description needed</p>
+                    <form id="upload-proposal">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" required placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="college" required placeholder="College">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="society" required placeholder="Society Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="phone" required placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" required placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            
+                            <input type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6" data-multiple-caption="{count} files selected" multiple />
+                            <label for="file-7"><span></span> <strong><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> Choose a file</strong></label>
+                        </div>
+                        <button type="submit" class="btn btn-success col-md-offset-6 col-sm-offset-4 col-xs-offset-2" style="font-size:1.5em;padding-right:2%;padding-left:2%;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="download" id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center wp4">
+                    <h1>Get marketing done right.</h1>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="footer-logo">
+                        <div href="#" style="font-size: 20px;">DigiYang</div>
+                    </h1>
+                    <p>© DigiYang 2016 - Designed &amp; Developed by: <br><a href="">Prastut Kumar</a> and <a href="">Kumar Shubham</a></p>
+                </div>
+                <div class="col-md-8">
+                    <ul class="footer-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Services</a></li>
+                        <li><a href="#screenshots">Connect with colleges</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay overlay-boxify">
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fa fa-heart"></i>About</a></li>
+                <li><a href="#features"><i class="fa fa-flash"></i>Features</a></li>
+            </ul>
+            <ul>
+                <li><a href="#upload-proposal"><i class="fa fa-download"></i>Upload Proposal</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/min/toucheffects-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/app.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/custom-file-input.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</body>
+
+</html>

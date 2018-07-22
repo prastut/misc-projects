@@ -1,0 +1,316 @@
+beige = #F9F2E7
+dark-gray = #333
+gray = #777
+green = #8FBE00
+light-blue = #40C0CB
+light-gray = #EEE
+light-green = #AEE239
+light-red = #E23430
+light-yellow = #FFE476
+red = #B11C17
+yellow = #DEAC11
+
+@keyframes rotate {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+
+global-reset()
+* { box-sizing: border-box }
+html, body { height: 100% }
+
+h1 {
+    color: red;
+    font: bold 56px/64px "Lobster Two", sans-serif;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+a {
+  color: gray
+}
+
+strong {
+    font-weight: bold
+}
+
+p {
+    color: gray;
+    font: 18px/22px "Quicksand", sans-serif;
+    text-align: center;
+    margin: 0;
+
+    &.notice {
+        margin: 10px 0;
+    }
+}
+
+.footer {
+    width: 640px
+    height: 60px
+    text-align: center
+    color: gray
+    padding: 10px 0 10px
+    position: fixed
+    bottom: 0
+    left: calc(50vw - 320px)
+    right: calc(50vw - 320px)
+    border-radius: 5px 5px 0 0
+    background white
+
+    iframe {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 10px;
+    }
+
+    p {
+        font: 12px/20px "Quicksand", sans-serif;
+        @media (max-width: 600px) {
+          font-size 14px
+        }
+    }
+
+    form p {
+        display: inline;
+    }
+
+    .byline {
+        padding: 0 10px;
+    }
+}
+
+.container {
+    height: 100vh
+}
+
+.page {
+    display: flex
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 640px;
+}
+
+.drop-zone {
+    width: 100%
+    height: 100%
+
+    .drop-zone-overlay {
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.5)
+        text-align: center
+
+        &:after {
+            color: white
+            content: 'DROP TO UPLOAD'
+            display: block
+            font: 24px/40px "Quicksand", sans-serif
+            margin-top: -20px
+            position: relative
+            text-shadow: 0 1px dark-gray
+            top: 50%
+        }
+    }
+}
+
+.spinner {
+    position: relative
+    z-index: -1
+    width: 300px
+    height: 300px
+    margin: 0 auto 20px
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .spinner-background {
+        display: block
+        width: 300px
+        height: 300px
+        position: absolute
+        top: 0
+        left: 0
+        transition: transform 1s
+        z-index: -1
+    }
+
+   
+    .spinner-image {
+        display: none
+        width: 150px
+        margin: 0 auto
+    }
+
+    .spinner-name {
+        background: white
+        font: bold 18px/20px "Quicksand", sans-serif
+        text-align: center
+        color: black
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        margin-top: 10px
+        margin: 0 auto
+        width: 220px
+    }
+
+    .spinner-size {
+        background: white
+        font: italic 12px/20px "Quicksand", sans-serif
+        text-align: center
+        color: black
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+    }
+}
+
+.tempalink {
+    background: beige
+    color: dark-gray
+    border: 0
+    margin: 20px 0
+    font: 18px/1 monospace
+    height: 60px
+    padding: 20px
+    text-align: center
+    width: 100%
+}
+
+.data {
+    color: gray
+    font: 14px/20px "Quicksand", sans-serif
+    text-align: center
+    overflow: hidden
+
+    .datum {
+        float: left
+        width: 50%
+    }
+}
+
+.download-button {
+    display: block
+    box-shadow: inset 0 1px 1px light-green
+    padding: 20px
+    background: green
+    border: none
+    color: white
+    width: 100%
+    font: bold 18px/20px "Quicksand", sans-serif
+    transition: 0.25s
+    cursor: pointer
+    text-transform: uppercase
+
+    &:hover, &:focus {
+        box-shadow: inset 0 1px 1px green
+        background: light-green
+    }
+
+    &:active {
+        background: green
+    }
+}
+
+.progress-bar {
+    height: 60px
+    overflow: hidden
+    background: green
+    transition: all 1s ease
+
+    .progress-bar-inner {
+        float: left
+        height: 100%
+        background: green
+        box-shadow: inset 0 1px 1px light-green
+        overflow: hidden
+    }
+
+    .progress-bar-text {
+        font: 14px/60px "Quicksand", sans-serif
+        color: white
+        text-align: center
+        text-transform: uppercase
+    }
+
+    &.progress-bar-failed {
+        background: red
+        box-shadow: inset 0 1px 1px light-red
+
+        .progress-bar-text {
+            text-align: center
+        }
+    }
+
+    &.progress-bar-in-progress {
+        background: beige
+        .progress-bar-inner {
+            background: #FFCC00
+            box-shadow: inset 0 1px 1px light-yellow
+        }
+
+        .progress-bar-text {
+            color: black
+            float: right
+            margin-right: 5px
+        }
+    }
+
+    &.progress-bar-small {
+        height: 30px
+        width: 50%
+        margin: 8px auto
+        border-radius: 5px
+
+        .progress-bar-text {
+            line-height: 30px
+        }
+    }
+}
+
+.select-file-label {
+    border: 2px solid gray
+    border-radius: 4px
+    padding: 2px 5px
+    margin-top: 10px
+    background: light-gray
+    display: inline-block
+    cursor: pointer
+    transition: all 0.25s ease
+
+    &:hover, &:active {
+        border-color: yellow
+        background: white
+        color: red
+    }
+
+    input[type="file"] {
+        position: fixed
+        top: -1000px
+    }
+}
+
+.donate-button {
+    display: none
+    border: 2px solid red
+    border-radius: 4px
+    padding: 2px 5px
+    margin-right: 10px
+    background: yellow
+    cursor: pointer
+    transition: all 0.25s ease
+    font: 12px/1 "Quicksand", sans-serif
+    color: white
+
+    &:hover, &:active {
+        border-color: yellow
+        background: white
+        color: red
+    }
+}

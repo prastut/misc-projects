@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The annual technical fest of VIT Universuty Chennai Campus">
+    <meta name="keywords" content="upcoming college festival, vit university,techfest, tech fest, technoVIT,technovit,technovit cultural events,informal events,technical events,formal events,symposium events,qubit,vitness,diseno,connectivitee,taikuun,glitz,vit,chennai,events website">
+    <meta name="author" content="krshubham, Kumar Shubham, prastut,Prastut Kumar,prashantkbhardwaj, Prashant Bhardwaj,Aman Saha,Prateek Singh,technovit, VIT University,Chennai">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>technoVIT' 16</title>
+    <meta name="description" content="Card Expansion Effect with SVG clipPath" />
+    <meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+    <meta name="author" content="Claudio Calautti for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card - team.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/videomod.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.dropdown.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>F
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        var root = document.getElementsByTagName('html')[0];
+        root.setAttribute('class', 'ff');
+    };
+    </script>
+    <style>
+    h2 {
+        color: white
+    }
+    
+    .icon-list {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    
+    .img-fix {
+        display: inline-block;
+        float: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    #pic-team {
+        overflow: hidden;
+    }
+    
+    .grayscale {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        -webkit-filter: brightness(80%);
+    }
+    
+    .grayscale:hover {
+        -webkit-filter: brightness(100%);
+    }
+    
+    .headermenu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 5px 3px 5px #000;
+        margin-top: -15px;
+    }
+    
+    .headermenu ul a {
+        margin: 10px;
+        color: white;
+        list-style: none;
+    }
+    
+    .headermenu ul a:hover {
+        margin: 10px;
+        color: #e2292a;
+        list-style: none;
+    }
+    
+    @media(max-width:768px) {
+        #menu-technovit {
+            display: none;
+        }
+    }
+    </style>
+    <style>
+    #Tabs ul {
+        list-style-type: none;
+    }
+    
+    #Tabs ul li {
+        display: inline-block;
+    }
+    
+    #Tabs ul li a {
+        position: relative;
+        margin-top: 16px;
+        display: block;
+        margin-left: 6px;
+        line-height: 24px;
+        padding-left: 10px;
+        background: #f6f6f6;
+        z-index: 9999;
+        border: 1px solid #ccc;
+        border-bottom: 0px;
+        /* The following four lines are to make the top left and top right corners of each tab rounded. */
+        -moz-border-radius-topleft: 4px;
+        border-top-left-radius: 4px;
+        -moz-border-radius-topright: 4px;
+        border-top-right-radius: 4px;
+        /* end of rounded borders */
+        width: 130px;
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    #Tabs ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    #Tabs #Content_Area {
+        padding: 0 15px;
+        margin-left: 100px;
+        clear: both;
+        overflow: hidden;
+        line-height: 19px;
+        position: relative;
+        top: 20px;
+        z-index: 5;
+    }
+    </style>
+    <!--style>
+        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+        .embed-container iframe, .embed-container object, .embed-container embed { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style-->
+</head>
+
+<body class="demo-3">
+    <div class="container">
+        <div class="menu-wrap">
+            <nav class="menu-top">
+                <div class="profile"><img class="img-fix" src="img/logo.png" alt="TechnoVIT" /><span></span></div>
+                <div class="icon-list">
+                    <a href="../new-index.html">Home</a>
+                    <a href="technovit.html"> technovit'16</a>
+                    <a href="http://technovit.eventze.in/home/login">Registrations</a>
+                    <!-- <a href="../Schedule_technovit'16.pdf"> Schedule</a> -->
+                    <a href="#" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                    <a href="team.html"> Patrons</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a> <!-- <a href="faq.html"> FAQ</a> -->
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                    <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                    <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                </div>
+            </nav>
+            <nav class="menu-side">
+                <a href="qubit.html"><i class="fa fa-fw fa-star-o"></i> Qubit</a>
+                <a href="connectivitieee.html"><i class="fa fa-fw fa-star-o"></i> ConnectiVITieee</a>
+                <a href="diseno.html"><i class="fa fa-fw fa-star-o"></i> Dise&#241;o</a>
+                <a href="vitness.html"><i class="fa fa-fw fa-star-o"></i> VITness</a>
+                <a href="taikuun.html"><i class="fa fa-fw fa-star-o"></i> Tai:kuun</a>
+                <a href="fashion.html"><i class="fa fa-fw fa-star-o"></i> Fashion</a>
+                <!-- <a href="gaming.html"><i class="fa fa-fw fa-star-o"></i> Informal/Gaming</a> -->
+            </nav>
+        </div>
+        <a class="menu-button" id="open-button"></a>
+        <div class="content-wrap">
+            <div class="content">
+                <div class="mymenu" id="menu-technovit">
+                    <header class="headermenu">
+                        <ul style="height: 59px;">
+                            <div style=" position: absolute; z-index: 10000; left: 0; padding-left: 20px;">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                            <a href="../new-index.html">Home</a>
+                            <a href="technovit.html"> technovit'16</a>
+                            <a href="http://technovit.eventze.in/home/login">Registrations</a>
+                            <!-- <a href="../Schedule_technovit'16.pdf"> Schedule</a> -->
+                            <a href="#" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                            <a href="team.html"> Patrons</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a> <!-- <a href="faq.html"> FAQ</a> -->
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                            <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                            <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                            <div style=" position: absolute; z-index: 99; right: 0; padding-right: 10px;margin-top:-9px!important;">
+                                <img src="img/vitcc.png" width="130" height="58" style="box-shadow: none !important;" id="logo-technovit">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                        </ul>
+                    </header>
+                </div>
+                <h2 align="center"><img src="img/logo.png"/></h2>
+                <div id="Tabs" align="center">
+                    <ul>
+                        <li id="li_tab1" onclick="tab('tab1')"><a>All</a></li>
+                        <li id="li_tab2" onclick="tab('tab2')"><a>Chief Patron</a></li>
+                        <li id="li_tab3" onclick="tab('tab3')"><a>Patron</a></li>
+                        <li id="li_tab4" onclick="tab('tab4')"><a>Co-Patron</a></li>
+                    </ul>
+                    <div id="Content_Area">
+                        <div id="tab1">
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath1">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/team/team1.jpg" id="pic-team"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Dr. G Viswanathan</h2>
+                                            <h3 class="card__subtitle">Chancellor</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath2">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/team/team2.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Mr. Sankar Viswanathan</h2>
+                                            <h3 class="card__subtitle">Vice-President(Chennai Campus)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath3">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/team/team3.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Dr. Sekar Viswanathan</h2>
+                                            <h3 class="card__subtitle">Vice-President(AP)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath4">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/team/team4.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Mr. G V Selvam</h2>
+                                            <h3 class="card__subtitle">Vice President(Vellore Campus)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/team/team6.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Ms. Kadhambari</h2>
+                                            <h3 class="card__subtitle">Asst. Vice-President(Chennai Campus)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/team/team8.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Prof. Anand A Samuel</h2>
+                                            <h3 class="card__subtitle">Vice-Chancellor (VIT University)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                              <div class="card__container card__container--closed">
+                                  <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                      <defs>
+                                          <clipPath id="clipPath5">
+                                              <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                          </clipPath>
+                                      </defs>
+                                      <image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/team/team5.jpg"></image>
+                                  </svg>
+                                  <div class="card__content">
+                                      <i class="card__btn-close fa fa-times"></i>
+                                      <div class="card__caption">
+                                          <h2 class="card__title">Prof. V Raju</h2>
+                                          <h3 class="card__subtitle">Pro-Vice-Chancellor (Vellore Campus)</h3>
+                                      </div>
+                                      <div class="card__copy">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/team/team7.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Prof. S Narayanan</h2>
+                                            <h3 class="card__subtitle">Pro-Vice-Chancellor (Vellore Campus)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/team/team9.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Dr. P. Gunasekaran</h2>
+                                            <h3 class="card__subtitle">Pro-Vice-Chancellor(Chennai Campus)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" style="display: none;">
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath1">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/team/team1.jpg" id="pic-team"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Dr. G Viswanathan</h2>
+                                            <h3 class="card__subtitle">Chancellor</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" style="display: none;">
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath2">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/team/team2.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Mr. Sankar Viswanathan</h2>
+                                            <h3 class="card__subtitle">Vice-President(Chennai Campus)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath3">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/team/team3.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Dr. Sekar Viswanathan</h2>
+                                            <h3 class="card__subtitle">Vice-President(University Affairs)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath4">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/team/team4.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Mr. G V Selvam</h2>
+                                            <h3 class="card__subtitle">President(Administration)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab4" style="display: none;">
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath5">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/team/team5.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Prof. V Raju</h2>
+                                            <h3 class="card__subtitle">Pro-Vice-Chancellor</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/team/team6.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Ms. Kadhambari</h2>
+                                            <h3 class="card__subtitle">Asst. Vice-President</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/team/team7.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Prof. S Narayanan</h2>
+                                            <h3 class="card__subtitle">Pro-Vice-Chancellor</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/team/team8.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Prof. Anand A Samuel</h2>
+                                            <h3 class="card__subtitle">Vice-Chancellor</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card grayscale">
+                                <div class="card__container card__container--closed">
+                                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                        <defs>
+                                            <clipPath id="clipPath6">
+                                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                            </clipPath>
+                                        </defs>
+                                        <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/team/team9.jpg"></image>
+                                    </svg>
+                                    <div class="card__content">
+                                        <i class="card__btn-close fa fa-times"></i>
+                                        <div class="card__caption">
+                                            <h2 class="card__title">Dr. P. Gunasekaran</h2>
+                                            <h3 class="card__subtitle">Pro-Vice-Chancellor(Chennai Campus)</h3>
+                                        </div>
+                                        <div class="card__copy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- trianglify pattern container -->
+                <div class="pattern pattern--hidden"></div>
+                <!-- cards -->
+                <div class="wrapper">
+                </div>
+                <!-- /cards -->
+            </div>
+            <!-- /content -->
+        </div>
+    </div>
+    </div>
+    <!-- Related demos -->
+    <section class="content content--related">
+    </section>
+    </div>
+    <!-- /container -->
+    <!-- JS -->
+    <script src="js/vendors/trianglify.min.js"></script>
+    <script src="js/vendors/TweenMax.min.js"></script>
+    <script src="js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="js/vendors/cash.min.js"></script>
+    <!--script src="js/Card-polygon.js"></script-->
+    <script src="js/demo-3.js"></script>
+    <script src="js/uiMorphingButton_fixed.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    function tab(tab) {
+        document.getElementById('tab1').style.display = 'none';
+        document.getElementById('tab2').style.display = 'none';
+        document.getElementById('tab3').style.display = 'none';
+        document.getElementById('tab4').style.display = 'none';
+
+
+        document.getElementById('li_tab1').setAttribute("class", "");
+        document.getElementById('li_tab2').setAttribute("class", "");
+        document.getElementById('li_tab3').setAttribute("class", "");
+        document.getElementById('li_tab4').setAttribute("class", "");
+
+
+        document.getElementById(tab).style.display = 'block';
+        document.getElementById('li_' + tab).setAttribute("class", "active");
+    }
+    </script>
+     <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
+    <div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="qubit.html">Qubit - SCSE</a></li>
+            <li><a href="connectivitieee.html">Connectivitiee - SENSE and SELECT</a></li>
+            <li><a href="diseno.html">Dise&#241;o - SMBS</a></li>
+            <li><a href="taikuun.html">Tai:kuun - Business</a></li>
+            <li><a href="vitness.html">VITness - Law</a></li>
+            <li><a href="fashion.html">Glitz - Fashion</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

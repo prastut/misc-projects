@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The annual technical fest of VIT Universuty Chennai Campus">
+    <meta name="keywords" content="upcoming college festival, vit university,techfest, tech fest, technoVIT,technovit,technovit cultural events,informal events,technical events,formal events,symposium events,qubit,vitness,diseno,connectivitee,taikuun,glitz,vit,chennai,events website">
+    <meta name="author" content="krshubham, Kumar Shubham, prastut,Prastut Kumar,prashantkbhardwaj, Prashant Bhardwaj,Aman Saha,Prateek Singh,technovit, VIT University,Chennai">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tai:kuun | technoVIT 2016 | VIT Chennai</title>
+    <meta name="description" content="Card Expansion Effect with SVG clipPath" />
+    <meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+    <meta name="author" content="Claudio Calautti for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/videomod.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.dropdown.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        var root = document.getElementsByTagName('html')[0];
+        root.setAttribute('class', 'ff');
+    };
+    </script>
+    <style>
+    h2 {
+        color: white
+    }
+    
+    .icon-list {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    
+    .img-fix {
+        display: inline-block;
+        float: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .headermenu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 5px 3px 5px #000;
+        margin-top: -15px;
+    }
+    
+    .headermenu ul a {
+        margin: 10px;
+        color: white;
+        list-style: none;
+    }
+    
+    .headermenu ul a:hover {
+        margin: 10px;
+        color: #e2292a;
+        list-style: none;
+    }
+    
+    @media(max-width:768px) {
+        #menu-technovit {
+            display: none;
+        }
+    }
+    </style>
+    <!--style>
+        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+        .embed-container iframe, .embed-container object, .embed-container embed { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style-->
+</head>
+
+<body class="demo-3">
+    <div class="container">
+        <div class="menu-wrap">
+            <nav class="menu-top">
+                <div class="profile"><img class="img-fix" src="img/logo.png" alt="TechnoVIT" /><span></span></div>
+                <div class="icon-list">
+                    <a href="../new-index.html">Home</a>
+                    <a href="technovit.html"> technovit'16</a>
+                    <a href="http://technovit.eventze.in/home/login">Registrations</a>
+                    <!-- <a href="../Schedule_technovit'16.pdf"> Schedule</a> -->
+                    <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                    <a href="team.html"> Patrons</a>
+                            <a href="theme.html"> Theme</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a> 
+                    <a href="faq.html"> FAQ</a>
+                    <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                    <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                </div>
+            </nav>
+            <nav class="menu-side">
+                <a href="qubit.html"><i class="fa fa-fw fa-star-o"></i> Qubit</a>
+                <a href="connectivitieee.html"><i class="fa fa-fw fa-star-o"></i> ConnectiVITieee</a>
+                <a href="diseno.html"><i class="fa fa-fw fa-star-o"></i> Dise&#241;o</a>
+                <a href="vitness.html"><i class="fa fa-fw fa-star-o"></i> VITness</a>
+                <a href="taikuun.html"><i class="fa fa-fw fa-star-o"></i> Tai:kuun</a>
+                <a href="fashion.html"><i class="fa fa-fw fa-star-o"></i> Fashion</a>
+                <!-- <a href="gaming.html"><i class="fa fa-fw fa-star-o"></i> Informal/Gaming</a> -->
+            </nav>
+        </div>
+        <a class="menu-button" id="open-button" onclick="hideDiv()"></a>
+        <div class="content-wrap" id="main-content" onclick="showDiv()">
+            <div class="content">
+                <div class="mymenu" id="menu-technovit">
+                    <header class="headermenu">
+                        <ul style="height: 59px;">
+                            <div style=" position: absolute; z-index: 10000; left: 0; padding-left: 20px;">
+                                <!-- <section class="Panel Panel-intro"> -->
+                            </div>
+                            <a href="../new-index.html">Home</a>
+                            <a href="technovit.html"> technovit'16</a>
+                            <a href="http://technovit.eventze.in/home/login">Registrations</a>
+                            <!-- <a href="../Schedule_technovit'16.pdf"> Schedule</a> -->
+                            <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                            <a href="team.html"> Patrons</a>
+                            <a href="theme.html"> Theme</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a> <!-- <a href="faq.html"> FAQ</a> -->
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                            <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                            <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                            <div style=" position: absolute; z-index: 99; right: 0; padding-right: 10px;margin-top:-9px!important;">
+                                <img src="img/vitcc.png" width="130" height="58" style="box-shadow: none !important;" id="logo-technovit">
+                                <!-- <section class="Panel Panel-intro"> -->
+                            </div>
+                        </ul>
+                    </header>
+                </div>
+                <h2 align="center"><img src="img/logo.png"/></h2>
+                <h2 align=center style="font-color">Tai:kuun</h2>
+                <h2 align=center style="font-color">Sep 15th, 2016</h2>
+                <!-- trianglify pattern container -->
+                <div class="pattern pattern--hidden"></div>
+                <!-- cards -->
+                <div class="wrapper">
+                    <div class="card vid-card">
+                        <div class="morph-button morph-button-modal morph-button-modal-4 morph-button-fixed">
+                            <span class="fullfill"></span>
+                            <button style="text-align:center;" type="button"><img style="margin-left:-5px;margin-top:2px;" src="img/play.png" width="80" height="80" /></button>
+                            <div class="morph-content">
+                                <div>
+                                    <div class="content-style-video">
+                                        <span class="icon icon-close">Close the dialog</span>
+                                        <div id="player"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- morph-button -->
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath1">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/taikuun/WOLFOFWALLSTREETPOSTER_new.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Wolf of Wall Street</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: MBA BLOCK AD404 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>2 day event- Starts on 15 September 2016, 9:00 a.m.<br>Rs 150 per person</h3>
+                                    <h3>Description</h3> Make a fortune !!! Sell ! Sell ! Selllll !!! Buy ! Buy ! Buyyyy !!!
+                                    <br>
+                                    <h3>Rules and Regulations</h3> 
+                                    <!-- <br>  -->
+                                    <ul>
+                                    	<li style="list-style-type:none;"><a href="documents/Guidelines_Wolf_of_Wall_Street.doc" title="Guideline" style="color:#44484A;">Click here to read the guidelines</a></li>	
+                                    </ul>
+                                    <h3>Faculty Coordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td rowspan="2">Prof. KT Rangamani</td>
+                                            <td>+91-7338761634</td>
+                                            <td rowspan="2">ktrangamani@vit.ac.in</td>
+                                        </tr>
+                                        <tr>
+                                            <td>+91-9042429233</td>
+                                        </tr>
+                                   </table>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>TSK Chaitanya</td>
+                                            <td>+91-9600082506</td>
+                                            <td>tskchaitanya003@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rama Subramanian</td>
+                                            <td>+91-8056103306</td>
+                                            <td>h.koushik@yahoo.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rajesh Guptha</td>
+                                            <td>+91-9550310712</td>
+                                            <td>rajeshp532@gmail.com</td>
+                                        </tr>
+                                   </table>
+                                    <br>
+                                    <!-- <div style="display:flex; align-items: center; justify-content: center;"> 
+                                        <img src="img/taikuun/the wolf of wall streetp.jpg" height="650" width="700">
+                                    </div>Posters To be updated.-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath3">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/taikuun/Business_Plan_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title" style="color:black;">BluPrint Ur Bizz</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: MBA BLOCK ad301 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00 a.m. to 1:00 p.m.<br>Rs 150 per person</h3>
+                                    <h3>Description:</h3>
+                                    <p>Come up with innovative business plans and showcase your entrepreneur in you!</h3> 
+                                    <!-- <br>  -->
+                                    <ul>
+                                    	<li>Rules to be updated</li>	
+                                    </ul>
+                                    <br>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Sujit Mallick</td>
+                                            <td>+91-7358318676</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sridharan Lavanya</td>
+                                            <td>+91-9047110048</td>
+                                            <td>lavanya.sridharan17@gmail.com</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Kannan gv</td>
+                                            <td></td>
+                                            <td>kannan1722@gmail.com</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath4">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/taikuun/Megamind_poster_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">MegaMind</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: MBA BLOCK ad304 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1:00 p.m. to 5:00 p.m.<br>Rs 100 per person</h3>
+                                    <h3>Description:</h3>
+                                    <p>MegaMind is a quiz event where people are tested for their general, SMART and Business Knowledge</h3> 
+                                    <!-- <br>  -->
+                                    <ul>
+                                    	<li>Rules to be updated</li>	
+                                    </ul>
+                                    <br>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:100%">
+                                    	<tr>
+                                            <td>Sucharita Ganesh</td>
+                                            <td>+91-9790908869</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jeevan Raj Nair</td>
+                                            <td>+91-8428414445</td>
+                                            <td>jeevanrj1@gmail.com</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Gina Noufel</td>
+                                            <td></td>
+                                            <td>ginanoufel20@gmail.com</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath16">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath16)" width="1920" height="500" xlink:href="img/taikuun/PRSpeak_poster_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">PR Speak</h2>
+                                </div>
+                                <div class="card__copy">
+                                     <h3>Venue: MBA Block AD303 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2:00 p.m. - 4:30 p.m.<br>Rs 100 per person</h3>
+                                    <h3>Description</h3> Advertising a product that is given to the participants in a funny and catchy way.
+                                    <br>
+                                    A team event of minimum 2, for every +1 Rs.50 extra per person, maximum of 6 persons per team.
+                                    <h3>Event Co-ordinators</h3>
+                                    <table style="width:100%">
+                                    	<tr>
+                                            <td>Sriprisha</td>
+                                            <td>+91-9750722704</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Srishti</td>
+                                            <td>+91-9941004750</td>
+                                            <td>srishtiram@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Manasa</td>
+                                            <td>+91-9789019008</td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath7">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath7)" width="1920" height="500" xlink:href="img/taikuun/collage_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title" style="color:black;text-align:center;">City Collator</h2>
+                                </div>
+                                <div class="card__copy">
+                                     <h3>Venue: MBA Block AD303 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 a.m. - 1:00 p.m.<br>Rs 100 per person</h3>
+                                    <h3>Description</h3> Its an collage event done online using pictures of smart city
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                        	<td>Vishnu Sankar</td>
+                                        	<td>7708330758</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>Swetha.S</td>
+                                            <td>+91-8939412501</td>
+                                            <td>swetha.sureshparthasarathy@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>Vijeytha Gopalakrishnan</td>
+                                            <td></td>
+                                        	<td>vijeytha@gmail.com</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath5">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/taikuun/smartfie_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title" style="color:black;">Smartfie</h2>
+                                </div>
+                                <div class="card__copy">
+                                     <h3>Venue: MBA Block &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be updated <br>Rs 50 per person</h3>
+                                    <h3>Description</h3> Showcase your selfie skills in the smartest way in relation to smart city
+                                    <br>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                         	<td>S Vivek Dayal</td>
+                                            <td>+91-8754728098</td>
+                                         	<td>vivek18061993@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>Poorva Verma</td>
+                                            <td></td>
+                                        	<td>alishaverma204@gmail.com</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                   
+                </div>
+                <!-- /cards -->
+            </div>
+            <!-- /content -->
+<div class="content">
+                <h2 align=center>Sep 16th, 2016</h2>
+                <!-- trianglify pattern container -->
+                <div class="pattern pattern--hidden"></div>
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath14">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath14)" width="1920" height="500" xlink:href="img/taikuun/best_mayor_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title" style="color:black;">Best Mayor</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: MBA BLOCK ad303 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00 a.m. to 1:30 p.m.<br>Rs 200 per person</h3>
+                                    <h3>Description:</h3>
+                                    <p>Place to showcase your managerial skills at highest level under cruciating circumstances and to help the city survive the crisis and rise again to glory</p>
+                                    <h3>Rules and Regulations</h3> 
+                                    <!-- <br>  -->
+                                    <ul>
+                                    	<li>Rules to be updated</li>	
+                                    </ul>
+                                    <br>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:100%">
+                                    	<tr>
+                                            <td>Ashwath</td>
+                                            <td>+91-8122233843</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vikramvelupandian.P</td>
+                                            <td>vikrampalani9900@gmail.com</td>
+                                            <td>+91-8428371133</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Krishnendu M</td>
+                                            <td>krishnendu27021993@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shalini</td>
+                                            <td>+91-8428471133</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath2">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/taikuun/razz_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Razzmattazz</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                     <h3>Venue: MBA BLOCK ad304 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00 a.m. - 12:00 a.m.<br>Rs 100 per person</h3>
+                                    <h3>Description:</h3>
+                                    <p>A place to Showcase your Business Talent </p>
+                                    <h3>Rules and Regulations</h3> 
+                                    <!-- <br>  -->
+                                    <ul>
+                                    	<li>Rules to be updated</li>	
+                                    </ul>
+                                    <br>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:100%">
+										<tr>
+                                            <td>Madhurika</td>
+                                            <td>+91-9940069858</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C.Hariharan</td>
+                                            <td>+91-9790957072</td>
+                                            <td>hariharan261094@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jigyasa Sapra</td>
+                                            <td>+91-8428026154</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath11">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath11)" width="1920" height="500" xlink:href="img/taikuun/WOLFOFWALLSTREETPOSTER_new.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Wolf of Wall Street</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: MBA BLOCK, admin BUILDING, 4<sup>th</sup> floor lab 404 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>2 day event- Starts on 15 September 2016, 9:00 a.m.<br>Rs 150 per person</h3>
+                                    <h3>Description</h3> Make a fortune !!! Sell ! Sell ! Selllll !!! Buy ! Buy ! Buyyyy !!!
+                                    <br>
+                                    <h3>Rules and Regulations</h3> 
+                                    <!-- <br>  -->
+                                    <ul>
+                                        <li style="list-style-type:none;"><a href="documents/Guidelines_Wolf_of_Wall_Street.doc" title="Guideline" style="color:#44484A;">Click here to read the guidelines</a></li>   
+                                    </ul>
+                                    <br>
+                                    <h3>Faculty Coordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td rowspan="2">Prof. KT Rangamani</td>
+                                            <td>+91-7338761634</td>
+                                            <td rowspan="2">ktrangamani@vit.ac.in</td>
+                                        </tr>
+                                        <tr>
+                                            <td>+91-9042429233</td>
+                                        </tr>
+                                   </table>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>TSK Chaitanya</td>
+                                            <td>+91-9600082506</td>
+                                            <td>tskchaitanya003@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rama Subramanian</td>
+                                            <td>+91-8056103306</td>
+                                            <td>h.koushik@yahoo.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rajesh Guptha</td>
+                                            <td>+91-9550310712</td>
+                                            <td>rajeshp532@gmail.com</td>
+                                        </tr>
+                                   </table>
+                                    <br>
+                                    <!-- <div style="display:flex; align-items: center; justify-content: center;"> 
+                                        <img src="img/taikuun/the wolf of wall streetp.jpg" height="650" width="700">
+                                    </div>Posters To be updated.-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath15">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath15)" width="1920" height="500" xlink:href="img/taikuun/smartfie_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title" style="color:black;">Smartfie</h2>
+                                </div>
+                                <div class="card__copy">
+                                     <h3>Venue: MBA Block &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be updated <br>Rs 50 per person</h3>
+                                    <h3>Description</h3> Showcase your selfie skills in the smartest way in relation to smart city
+                                    <br>
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>S Vivek Dayal</td>
+                                            <td>+91-8754728098</td>
+                                            <td>vivek18061993@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Poorva Verma</td>
+                                            <td></td>
+                                            <td>alishaverma204@gmail.com</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Workshop part begins here-->
+            <div class="content">
+                <h2 align=center>Tai:kuun Workshops</h2>
+                <!-- trianglify pattern container -->
+                <div class="pattern pattern--hidden"></div>
+                <!-- cards -->
+                 <div class="wrapper">
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath26">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath26)" width="1920" height="500" xlink:href="img/taikuun/Empoly_skill_poster_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title" style="color:black;">Campus to Corporate – Employability Skills</h2>
+                                    <p class="card__subtitle" style="color:black;">15th September</p>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>MBA Block, 5th floor, auditorium<br> 12:00 a.m. - 4:00 p.m.<br> Rs 100 per person</h3>
+                                    <h3>Description:</h3>
+                                    <p>
+                                        To enhance your corporate skills and awareness about corporate culture</p>
+                                    <h3>Event Co-ordinators:</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Sriram (16MBA1027)</td>
+                                            <td>9791084074</td>        
+                                            <td>sriramsmooth@gmail.com</td>                                
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+					 <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath27">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath27)" width="1920" height="500" xlink:href="img/taikuun/Date_Science_poster_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Data Science  for business in the Digital Age</h2>
+                                    <p class="card__subtitle">16th September</p>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>MBA Block, AD205 <br> 9:00 a.m. - 5:00 p.m.<br> Rs 100 per person</h3>
+                                    <h3>Description:</h3>
+                                    <p>Workshop on Data Analytics in Marketing, Finance and HR using SPSS</p>
+                                    <h3>Event Co-ordinators:</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Madhurjya Borthakur (16MBA1035)</td>
+                                            <td>+91-8761842039</td>
+                                            <td>manav8991@gmail.com</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath27">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath27)" width="1920" height="500" xlink:href="img/taikuun/SEBI_Poster_1.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Introduction to Stock Market by Securities and Exchange Board of India</h2>
+                                    <p class="card__subtitle">17th September</p>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>>MBA Block, 5th floor, auditorium <br> 9:00 a.m. - 1:00 p.m.<br> Rs 150 per person</h3>
+                                    <h3>Description:</h3>
+                                    <p>A workshop- You don’t need to be in dalal street to trade. Anyone can trade from anywhere. (SEBI is the regulator of securities market in India)</p>
+                                    <h3>Event Co-ordinators:</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>anmajo16@gmail.com</td>
+                                            <tr>Ann Mary John (16MBA1047)</tr>
+                                            <td>+91-9965336491</td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Related demos -->
+    <section class="content content--related">
+    </section>
+    </div>
+    <!-- /container -->
+    <!-- JS -->
+    <script src="js/vendors/trianglify.min.js"></script>
+    <script src="js/vendors/TweenMax.min.js"></script>
+    <script src="js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="js/vendors/cash.min.js"></script>
+    <script src="js/Card-polygon.js"></script>
+    <script src="js/demo-3.js"></script>
+    <script src="js/uiMorphingButton_fixed.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: 'KgEMuS24gNc',
+            events: {
+                'onPlayerReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            },
+            playerVars: {
+                rel: 0
+            }
+        });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = true;
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+
+    function stopVideo() {
+        player.stopVideo();
+    }
+
+    (function() {
+
+        new UIMorphingButton(document.querySelector('.morph-button'), {
+            closeEl: '.icon-close'
+        });
+    })();
+
+    function hideDiv() {
+        document.getElementById('menu-technovit').style.display = "none";
+    }
+
+    function showDiv() {
+        document.getElementById('menu-technovit').style.display = "block";
+    }
+    </script>
+    <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
+    <div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="qubit.html">Qubit - SCSE</a></li>
+            <li><a href="connectivitieee.html">Connectivitiee - SENSE and SELECT</a></li>
+            <li><a href="diseno.html">Dise&#241;o - SMBS</a></li>
+            <li><a href="taikuun.html">Tai:kuun - Business</a></li>
+            <li><a href="vitness.html">VITness - Law</a></li>
+            <li><a href="fashion.html">Glitz - Fashion</a></li>
+        </ul>
+    </div>
+    <div id="jq-dropdown-2" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="documents/day1.pdf">Day 1 Schedule</a></li>
+            <li><a href="documents/day2.pdf">Day 2 Schedule</a></li>
+            <li><a href="documents/day3.pdf">Day 3 Schedule</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

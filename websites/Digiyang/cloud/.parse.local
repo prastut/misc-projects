@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "digiyang"
+    },
+    "digiyang": {
+      "applicationId": "n0vsd3NHcndMrbhk9oU3AISWfp8C6VBbj6rj5Y1Q"
+    }
+  }
+}

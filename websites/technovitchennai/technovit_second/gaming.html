@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gaming / Informal | technoVIT 2016 | VIT Chennai</title>
+    <meta name="description" content="Card Expansion Effect with SVG clipPath" />
+    <meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+    <meta name="author" content="Claudio Calautti for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/videomod.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.dropdown.min.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        var root = document.getElementsByTagName('html')[0];
+        root.setAttribute('class', 'ff');
+    };
+    </script>
+    <style>
+    h2 {
+        color: white
+    }
+    
+    .icon-list {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    
+    .img-fix {
+        display: inline-block;
+        float: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .headermenu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 5px 3px 5px #000;
+        margin-top: -15px;
+    }
+    
+    .headermenu ul a {
+        margin: 10px;
+        color: white;
+        list-style: none;
+    }
+    
+    .headermenu ul a:hover {
+        margin: 10px;
+        color: #e2292a;
+        list-style: none;
+    }
+    
+    @media(max-width:768px) {
+        #menu-technovit {
+            display: none;
+        }
+    }
+    </style>
+    <!--style>
+        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+        .embed-container iframe, .embed-container object, .embed-container embed { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style-->
+</head>
+
+<body class="demo-3">
+    <div class="container">
+        <div class="menu-wrap">
+            <nav class="menu-top">
+                <div class="profile"><img class="img-fix" src="img/logo.png" alt="TechnoVIT" /><span></span></div>
+                <div class="icon-list">
+                    <a href="../new-index.html">Home</a>
+                    <a href="technovit.html"> technovit'16</a>
+                    <a href="http://technovit.eventze.in/home/login">Registrations</a>
+                    <!-- <a href="../Schedule_technovit'16.pdf"> Schedule</a> -->
+                    <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                    <a href="sponsors.html"> Sponsors</a>
+                    <a href="team.html"> Patrons</a>
+                            <a href="theme.html"> Theme</a>
+                    <a href="contact.html"> Contact Us</a> <!-- <a href="faq.html"> FAQ</a> -->
+                    <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2​" style="color: red;">Register for Marathon</a>
+                </div>
+            </nav>
+            <nav class="menu-side">
+                <a href="qubit.html"><i class="fa fa-fw fa-star-o"></i> Qubit</a>
+                <a href="connectivitieee.html"><i class="fa fa-fw fa-star-o"></i> ConnectiVITieee</a>
+                <a href="diseno.html"><i class="fa fa-fw fa-star-o"></i> Dise&#241;o</a>
+                <a href="vitness.html"><i class="fa fa-fw fa-star-o"></i> VITness</a>
+                <a href="taikuun.html"><i class="fa fa-fw fa-star-o"></i> Tai:kuun</a>
+                <a href="fashion.html"><i class="fa fa-fw fa-star-o"></i> Fashion</a>
+                <!-- <a href="gaming.html"><i class="fa fa-fw fa-star-o"></i> Informal/Gaming</a> -->
+            </nav>
+        </div>
+        <a class="menu-button" id="open-button" onclick="hideDiv()"></a>
+        <div class="content-wrap" id="main-content" onclick="showDiv()">
+            <div class="content">
+                <div class="mymenu" id="menu-technovit">
+                    <header class="headermenu">
+                        <ul style="height: 59px;">
+                            <div style=" position: absolute; z-index: 10000; left: 0; padding-left: 20px;">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                            <a href="../new-index.html">Home</a>
+                            <a href="technovit.html"> technovit'16</a>
+                            <a href="http://technovit.eventze.in/home/login">Registrations</a>
+                            <!-- <a href="../Schedule_technovit'16.pdf"> Schedule</a> -->
+                            <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                            <a href="sponsors.html"> Sponsors</a>
+                            <a href="team.html"> Patrons</a>
+                            <a href="theme.html"> Theme</a>
+                            <a href="contact.html"> Contact Us</a> <!-- <a href="faq.html"> FAQ</a> -->
+                            <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2​" style="color: red;">Register for Marathon</a>
+                            <div style=" position: absolute; z-index: 99; right: 0; padding-right: 10px;margin-top:-9px!important;">
+                                <img src="img/vitcc.png" width="130" height="58" style="box-shadow: none !important;" id="logo-technovit">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                        </ul>
+                    </header>
+                </div>
+                <h2 align="center"><img src="img/logo.png"/></h2>
+                <h2 align=center style="font-color">Gaming</h2>
+                <!-- <h2 align=center style="font-color">Oct 15th, 2015</h2> -->
+                <!-- trianglify pattern container -->
+                <div class="pattern pattern--hidden"></div>
+                <!-- cards -->
+                <div class="wrapper">
+                    <div class="card vid-card">
+                        <div class="morph-button morph-button-modal morph-button-modal-4 morph-button-fixed">
+                            <span class="fullfill"></span>
+                            <button style="text-align:center;" type="button"><img style="margin-left:-5px;margin-top:2px;" src="img/play.png" width="80" height="80" /></button>
+                            <div class="morph-content">
+                                <div>
+                                    <div class="content-style-video">
+                                        <span class="icon icon-close">Close the dialog</span>
+                                        <div id="player"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- morph-button -->
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath1">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/gaming pictures/fifa.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">FIFA 15</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: AB306 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16th & 17th&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 100 per person</h3>
+                                    <h3>Description</h3> All matches before semis This is an individual event .Each match will be of 6 minutes (per half) duration .The winning participant will qualify for round 2 and the one losing will be eliminated. An option to play with either keyboard or controller is available. The participants will have to give their preference of keyboard or controller at the time of registrations itself. No changes after that will be entertained. Semi finals This is an individual event. Each match will be of 7 minutes (per half) duration The winning participant will qualify for finals. Finals Final match will be of 8 minutes (per half) duration.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> &bull; The participants have to specify their preference (keypad or controller) at the time of registrations itself.
+                                    <br> &bull; The participant can use either tactical or legacy defending according to their wish.
+                                    <br> &bull; No special teams like classic x1 or world x1 can be chosen.
+                                    <br> &bull; All the instructions given by the co-coordinators as well as the volunteers must be extensively followed.
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>SHOBHIT KUMAR </td>
+                                            <td>shobhit.kumar2013@vit.ac.in</td>
+                                            <td>+91 868 188 5975</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AMAN RAJ</td>
+                                            <td>aman.raj2013@vit.ac.in</td>
+                                            <td>+91 735 833 1435</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AVINASH VUTUKURU</td>
+                                            <td>avinash.vutukuru2013@vit.ac.in</td>
+                                            <td>+91 868 191 7600</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath2">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/gaming pictures/blur.jpg">
+                                </image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">BLUR</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Venue: AB306 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 300 per team</h3>
+                                    <h3>Description:</h3> Blur is racing game which features a racing style that incorporates real world cars and locales with arcade style handling and vehicular combat.
+                                    <h3>Rules and Regulations: </h3> &bull; Teams consists of three players.
+                                    <br> &bull; Tournament will be conducted on knockout basis.
+                                    <br> &bull; Each round will have 3 maps or races.
+                                    <br> &bull; Maps will be decided by the judges or coordinators.
+                                    <br> &bull; Cars level will be random
+                                    <br> &bull; One player can participate from only one team.
+                                    <h3>Event Co-ordinators:</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>SHIVAM MISHRA</td>
+                                            <td>shivam.mishra2013@vit.ac.in</td>
+                                            <td>+91 971 002 9572</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ABHISHEK CHOUDHARY</td>
+                                            <td>abhishekkumar2013@vit.ac.in</td>
+                                            <td>+91 915 917 5029</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath3">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/gaming pictures/chess.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Blitz Chess</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Description:</h3>
+                                    <p>Coming Soon.</p>
+                                    <h3>Rules and Regulations: </h3>
+                                    <p>Coming soon.</br>
+                                    </p>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Shantanu Singh </td>
+                                            <td>+91 868 189 8430 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ahesash </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath4">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/gaming pictures/forensics.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Forensics (7 to 8)</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <p></p>
+                                    <h3>Description:</h3>
+                                    <p>Coming soon.
+                                    </p>
+                                    <h3>Rules and Regulations: </h3>
+                                    <p>Coming soon.</p>
+                                    <h3>Event Co-ordinator:</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Arun </td>
+                                            <td>+91 916 071 8991 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Santanb </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath5">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/gaming pictures/teamfortress.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Team Fortress</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3>VenueStart-End Time</h3>
+                                    <h3>Description</h3> Coming soon.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> Coming soon.
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Varun Warrier </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Santanb </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath6">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/gaming pictures/NFS.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Need for Speed (NFS)</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3>VenueStart-End Time</h3>
+                                    <h3>Description</h3> Coming soon.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> Coming soon.
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Tanushree </td>
+                                            <td>+91 994 125 4229</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garg Divyansh </td>
+                                            <td>+91 868 187 5680 </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath7">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath7)" width="1920" height="500" xlink:href="img/gaming pictures/cs.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Counterstrike</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3>Venue: AB306 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Five Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 600 per team</h3>
+                                    <h3>Description</h3> Counter-Strike is a first-person shooter game in which players join either the terrorist team, the counter-terrorist team, or become spectators. Each team attempts to complete their mission objective and/or eliminate the opposing team. Each round starts with the two teams spawning simultaneously.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> &bull; Normal game rules.
+                                    <br> &bull; Team of 5.
+                                    <br> &bull; players should bring their own system and other required hardware (mouse, headphones).
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>C Dhanush Kumar </td>
+                                            <td>dhanush.kumarc2014@vit.ac.in</td>
+                                            <td>+91 979 092 7083 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kevin BS </td>
+                                            <td>kevin.bs2014@vit.ac.in</td>
+                                            <td>+91 978 926 3626 </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath12">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath12)" width="1920" height="500" xlink:href="img/gaming pictures/cod.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Call of Duty: MW</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3>Venue: AB306 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Five Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 500 per team</h3>
+                                    <h3>Description</h3> Call of Duty 4: Modern Warfare features team-based and death match based multiplayer modes on various maps. Each modehas an objective that requires unique strategies to complete.Players can call in UAV reconnaissance scans, air strikes, and attack helicopters, when they achieve three-, five-, and seven-enemy kill streaks respectively.A game ends when either a team or player has reached a predefined number of points, or the allotted time expires in which case the team or player with the most points wins. If the points are even when the time expires, Sudden Death mode is activated in which there is no re-spawning and the team who either has the last man standing, or achieves the objective first are the winners. If the player is in either of the two matches, then there is an Overtime match, in which the next team to win is rewarded the victory.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> &bull; Group event (5 per team).
+                                    <br> &bull; Normal game rules.
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>C Dhanush Kumar </td>
+                                            <td>dhanush.kumarc2014@vit.ac.in</td>
+                                            <td>+91 979 092 7083 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kevin BS </td>
+                                            <td>kevin.bs2014@vit.ac.in</td>
+                                            <td>+91 978 926 3626 </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath100">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath100)" width="1920" height="500" xlink:href="img/gaming pictures/dota.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">DOTA 2</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3>Venue Start-End Time</h3>
+                                    <h3>Description</h3> Coming soon.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> Coming soon.
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Daniel Bennaiah</td>
+                                            <td>+91 995 297 3606 </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Siddharth S</td>
+                                            <td>+91 978 909 0002</td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath9">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath9)" width="1920" height="500" xlink:href="img/gaming pictures/puzzle.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Puzzles Champ</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3>Venue: AB306 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 50 per person</h3>
+                                    <h3>Description</h3> <b>Round 1 :</b> In this round the teams will be shown a slide show containing 20 different type of puzzles, different type of questions, they write answers in a paper.
+                                    <br>
+                                    <b>Round 2 :</b> In this round also there will be different types of puzzles like long visual connect, short connect visual we display them in projector.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> &bull; <b>Rule 1: </b>The participants are not allowed to talk to each other if they are not in same group during the ongoing task.
+                                    <br> &bull; <b>Rule 2: </b> Normal verbal communication in banned here. The participating teams have to only use their drawing skills for communication. Their compatibility would be the most important thing in this round!
+                                    <br> &bull; <b>Rule 3: </b> Mobile phones are not allowed during the entire task. Further, all the instructions given by the co-coordinators as well as the volunteers must be extensively followed.
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>E.SIVA SARATH </td>
+                                            <td>sivasarath.chandrared2013@vit.ac.in</td>
+                                            <td>+91 868 186 1400 </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath10">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath10)" width="1920" height="500" xlink:href="img/gaming pictures/rubiks.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title" style="color: black;">Rubik's Cube</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3>Venue Start-End Time</h3>
+                                    <h3>Description</h3> Coming soon.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> Coming soon.
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Siva Sarath </td>
+                                            <td>+91 868 186 1400 </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mayank Raj</td>
+                                            <td>+91 917 685 8223</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Haritha</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__container card__container--closed">
+                            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <clipPath id="clipPath11">
+                                        <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                    </clipPath>
+                                </defs>
+                                <image clip-path="url(#clipPath11)" width="1920" height="500" xlink:href="img/gaming pictures/sudoku.jpg"></image>
+                            </svg>
+                            <div class="card__content">
+                                <i class="card__btn-close fa fa-times"></i>
+                                <div class="card__caption">
+                                    <h2 class="card__title">Sudoku Championship</h2>
+                                </div>
+                                <div class="card__copy">
+                                    <h3>Venue Start-End Time</h3>
+                                    <h3>Description</h3> Coming soon.
+                                    <br>
+                                    <h3>Rules and Regulations</h3> Coming soon.
+                                    <br>
+                                    <h3>Event Co-ordinator</h3>
+                                    <table style="width:80%">
+                                        <tr>
+                                            <td>Siva Sarath </td>
+                                            <td>+91 868 186 1400 </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mayank Raj</td>
+                                            <td>+91 917 685 8223</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Haritha</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /cards -->
+                </div>
+                <!-- /content -->
+                <div class="content">
+                    <h2 align=center>Informal Events</h2>
+                    <!-- trianglify pattern container -->
+                    <div class="pattern pattern--hidden"></div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath50">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath50)" width="1920" height="500" xlink:href="img/qubit event pictures/ahaan.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">Aahaan</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue: AB205 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:00AM - 04:00PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs. 50 per person</h3>
+                                        <h3>Description</h3>
+                                        <a href="documents/Aahaan1.docx">Click here to view Description and rules</a>
+                                        <br>
+                                        <!--  <h3>Rules and Regulations</h3> &bull; Group Participation (Team of 2-4).
+                                    <br> &bull; Points will be given based on the idea and design of the website.
+                                    <br> Participants can use internet whatsoever
+                                    <br>
+                                    <h3>Event Co-ordinators</h3>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>Inderpartap Singh</td>
+                                            <td>inderpartap15@gmail.com</td>
+                                            <td>+91 947 868 6424</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prastut Kumar</td>
+                                            <td>prastut.kumar2014@vit.ac.in</td>
+                                            <td>+91 994 021 2530</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fenil Patel</td>
+                                            <td>patel.baldevbhai2014@vit.ac.in</td>
+                                            <td>+91 893 949 0093</td>
+                                        </tr>
+                                    </table> -->
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath14">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath14)" width="1920" height="500" xlink:href="img/gaming pictures/begborrowsteal.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">Beg, Borrow or Steal</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue: AB Amphi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00AM – 1:00PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15/10/15 <br> Rs. 100 per team</h3>
+                                        <h3>Description</h3> Each team shall be comprised of two people. A list will be provided to the participants and they have to Beg Borrow or Steal to fetch the items within a specified time frame. The team that collects the maximum number of items wins! The list will merely comprise of 20-25 items.
+                                        <br>
+                                        <h3>Rules and Regulations</h3>&bull; Group event (2 per team)
+                                        <br> &bull; List shall be provided to participants and they have to Beg, Borrow or Steal to fetch the items in the given time limit. The team that fulfils the task in the least possible time wins!
+                                        <br>
+                                        <h3>Event Co-ordinators</h3>
+                                        <table style="width:100%">
+                                            <tr>
+                                                <td>Akshat Chandra</td>
+                                                <td>akshat.chandra2015@vit.ac.in</td>
+                                                <td>+91 817 148 2622</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kushagra Srivastava</td>
+                                                <td></td>
+                                                <td>+91 979 849 4274</td>
+                                            </tr>
+                                        </table>
+                                        <!-- <br>
+                                        <br>
+                                        <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                            <img src="img/new posters/tinker.jpg" height="650" width="1100">
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath15">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath15)" width="1920" height="500" xlink:href="img/gaming pictures/doodle.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title" style="color:black;">Doodle</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue: AB Round Amphi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00AM – 12:00PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16/10/15 <br> Rs. 100 per team</h3>
+                                        <h3>Description</h3> Cup pyramid, ball n hole, pad and ball, human snakes and ladders! All these under one roof! Sounds exciting right?
+                                        <br>
+                                        <h3>Rules and Regulations</h3>&bull; Group event (2 per team)
+                                        <br> &null; This Event consists of four rounds (including the final) where each round is an elimination round.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:100%">
+                                            <tr>
+                                                <td>ThiruKumaran</td>
+                                                <td>gokul.r2014@vit.ac.in</td>
+                                                <td>+91 894 016 3550</td>
+                                            </tr>
+                                        </table>
+                                        <!--  <br>
+                                        <br>
+                                        <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                            <img src="img/new posters/Language Portability APP.jpg" height="650" width="1100">
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath16">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath16)" width="1920" height="500" xlink:href="img/gaming pictures/mesh.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">Mash up with colors</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue: AB409 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2:00PM – 4:00PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16/10/15 <br> Rs. 100 per team</h3>
+                                        <h3>Description</h3> The event MASH UP WITH COLORS gives the participants an opportunity to design their hands, fingers and nails with any medium like colors, mehandi etc. The best art work is judged based on creativity of themes used. Note: The art works should have a technical theme.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> &bull; Group event (2 per team)
+                                        <br> &bull; Two members in a group.
+                                        <br>
+                                        <h3>Event Co-ordinators</h3>
+                                        <table style="width:100%">
+                                            <tr>
+                                                <td>Agasti Catherine</td>
+                                                <td>Agesty.catherined2014@vit.ac.in</td>
+                                                <td>+91 740 263 2887</td>
+                                            </tr>
+                                        </table>
+                                        <!-- <br>
+                                        <br>
+                                        <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                            <img src="img/new posters/Codebreakers.jpg" height="650" width="1100">
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath13">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath13)" width="1920" height="500" xlink:href="img/gaming pictures/dubsmash.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title" style="color:black;">Dubsmash</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Online event&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5:00PM – 7:00PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16/10/15 <br> Rs. 150 per team</h3>
+                                        <h3>Description</h3> The participants will have to register in groups. They have to upload their videos to the facebook page specified. We would sort out the best five of all the entries. We will conduct voting on facebook.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> &bull; Group event (3 per team).
+                                        <br> &bull; Only registered groups can upload their video on the facebook page to participate in this event.
+                                        <br>
+                                        <h3>Event Co-ordinators</h3>
+                                        <table style="width:100%">
+                                            <tr>
+                                                <td>Snehil Banerjee</td>
+                                                <td>snehilbanerji@gmail.com </td>
+                                                <td>+91 909 288 2875</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Praveen Kumar</td>
+                                                <td>praveen.kumar2014@vit.ac.in</td>
+                                                <td>+91 908 770 0000</td>
+                                            </tr>
+                                        </table>
+                                        <!--  <br>
+                                        <br>
+                                        <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                            <img src="img/new posters/Paper presentation.jpg" height="650" width="500">
+                                        </div>
+ -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath17">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath17)" width="1920" height="500" xlink:href="img/gaming pictures/drawing.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title" style="color:black">Drawing Quest</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue: AB212&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00PM – 1:30PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15/10/15 <br> Rs. 100 per team</h3>
+                                        <h3>Description</h3> The Event consists of 3 rounds.
+                                        <br>The first round will be logo drawing quiz in which you will be given clues based on which you have to make logos.Winner of the round will be the team drawing maximum and correct number of logos.
+                                        <br>The second round will be blindfolded maze in which you will be blindfolded and your partner will instruct you to cross the maze.
+                                        <br>The judgement will be based on your clarity of drawing and time taken.
+                                        <br>The third round will be a surprise round which will be revealed on the spot.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> &bull; Group event (2 per team).
+                                        <br> &bull; There will be 3 rounds.
+                                        <br> &bull; Each round will be of length 30 minutes.
+                                        <br> &bull; No Web help.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:100%">
+                                            <tr>
+                                                <td>Shashank Priya</td>
+                                                <td></td>
+                                                <td>+91 868 186 6120</td>
+                                            </tr>
+                                        </table>
+                                        <!--  <br>
+                                        <br>
+                                        <br>
+                                        <div style="display:flex; align-items: center; justify-content: center;">
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath20">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath20)" width="1920" height="500" xlink:href="img/gaming pictures/catch the bouncingfluid.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">Catch the bouncing fluid</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue Start-End Time</h3>
+                                        <h3>Description</h3> Coming soon.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> Coming soon.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:80%">
+                                            <tr>
+                                                <td>Prasun Bhavsar </td>
+                                                <td>+91 860 881 1244
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Deep Prakash</td>
+                                                <td>+91 868 186 6416</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath21">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath21)" width="1920" height="500" xlink:href="img/gaming pictures/runonfluid.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">Run on Fluid</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue Start-End Time</h3>
+                                        <h3>Description</h3> Coming soon.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> Coming soon.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:80%">
+                                            <tr>
+                                                <td>Pranav Piyush </td>
+                                                <td>+91 868 188 0578
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prasun Bhavsar</td>
+                                                <td>+91 860 881 1244</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath22">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath22)" width="1920" height="500" xlink:href="img/gaming pictures/drama.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">DRAMA</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue Start-End Time</h3>
+                                        <h3>Description</h3> Coming soon.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> Coming soon.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:80%">
+                                            <tr>
+                                                <td>chitransh Shrivatsav </td>
+                                                <td>+91 812 285 7475
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mahima Gherani</td>
+                                                <td>+91 988 496 7550</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath23">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath23)" width="1920" height="500" xlink:href="img/gaming pictures/documentarywriting.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">DOCUMENTARY WRITING</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue Start-End Time</h3>
+                                        <h3>Description</h3> Coming soon.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> Coming soon.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:80%">
+                                            <tr>
+                                                <td>Kiran </td>
+                                                <td>+91 994 439 9902</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath24">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath24)" width="1920" height="500" xlink:href="img/gaming pictures/postermaking.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">POSTER MAKING</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue Start-End Time</h3>
+                                        <h3>Description</h3> Coming soon.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> Coming soon.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:80%">
+                                            <tr>
+                                                <td>Varsha Pillai
+                                                </td>
+                                                <td>+91 949 556 4764
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>ovia</td>
+                                                <td>+91 944 342 0121</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath25">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath25)" width="1920" height="500" xlink:href="img/gaming pictures/crimespot.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">CRIME SPOT</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue Start-End Time</h3>
+                                        <h3>Description</h3> Coming soon.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> Coming soon.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:80%">
+                                            <tr>
+                                                <td>Siva
+                                                </td>
+                                                <td>+91 944 747 9300
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Swetha</td>
+                                                <td>+91 904 308 8059</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath26">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath26)" width="1920" height="500" xlink:href="img/gaming pictures/selfie.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title" style="color:black;">Selfiee</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue Start-End Time</h3>
+                                        <h3>Description</h3> Coming soon.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> Coming soon.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:80%">
+                                            <tr>
+                                                <td>Charles kemy </td>
+                                                <td>+91 988 402 5411</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sucharita Ganesh</td>
+                                                <td>+91 979 690 9088</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container card__container--closed">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath27">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <image clip-path="url(#clipPath27)" width="1920" height="500" xlink:href="img/gaming pictures/shutterbugs.jpg"></image>
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption">
+                                        <h2 class="card__title">Shutterbugs</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                        <h3>Venue Start-End Time</h3>
+                                        <h3>Description</h3> Coming soon.
+                                        <br>
+                                        <h3>Rules and Regulations</h3> Coming soon.
+                                        <br>
+                                        <h3>Event Co-ordinator</h3>
+                                        <table style="width:80%">
+                                            <tr>
+                                                <td>Charles kemy </td>
+                                                <td>+91 988 402 5411</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sucharita Ganesh</td>
+                                                <td>+91 979 690 9088</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Related demos -->
+        <section class="content content--related">
+        </section>
+    </div>
+    </div>
+    </div>
+    <!-- JS -->
+    <script src="js/vendors/trianglify.min.js"></script>
+    <script src="js/vendors/TweenMax.min.js"></script>
+    <script src="js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="js/vendors/cash.min.js"></script>
+    <script src="js/Card-polygon.js"></script>
+    <script src="js/demo-3.js"></script>
+    <script src="js/uiMorphingButton_fixed.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: '',
+            events: {
+                'onPlayerReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            },
+            playerVars: {
+                rel: 0
+            }
+        });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = true;
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+
+    function stopVideo() {
+        player.stopVideo();
+    }
+
+    (function() {
+
+        new UIMorphingButton(document.querySelector('.morph-button'), {
+            closeEl: '.icon-close'
+        });
+    })();
+
+    function hideDiv() {
+        document.getElementById('menu-technovit').style.display = "none";
+    }
+
+    function showDiv() {
+        document.getElementById('menu-technovit').style.display = "block";
+    }
+    </script>
+    <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
+    <div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="qubit.html">Qubit</a></li>
+            <li><a href="connectivitieee.html">Connectivitiee</a></li>
+            <li><a href="diseno.html">Dise&#241;o</a></li>
+            <li><a href="taikuun.html">Tai:kuun</a></li>
+            <li><a href="vitness.html">VITness</a></li>
+            <li><a href="fashion.html">Glitz</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

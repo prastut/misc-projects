@@ -1,0 +1,388 @@
+<style>
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+
+/* ------------------- */
+
+.android {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -80px;
+    width: 160px;
+    height: 125px;
+    box-shadow: 0 12px 30px -25px rgba(0, 0, 0, .8);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.head,
+.head:after,
+.head:before,
+.body,
+.arm,
+.leg {
+    position: absolute;
+    background-color: rgb(163, 201, 56);
+}
+
+.head:after,
+.head:before {
+    content: "";
+    display: block;
+}
+
+.head {
+    left: 50%;
+    top: 5px;
+    margin-left: -35px;
+    width: 70px;
+    height: 30px;
+    border-radius: 80px 80px 0 0;
+    -webkit-animation: head 3s infinite;
+    animation: head 3s infinite;
+}
+
+.head:after {
+    top: -6px;
+    left: 16px;
+    width: 2px;
+    height: 8px;
+    border-radius: 2px;
+    -webkit-transform: rotate(-30deg) translateZ(0);
+    transform: rotate(-30deg) translateZ(0);
+}
+
+.head:before {
+    top: -6px;
+    left: 52px;
+    width: 2px;
+    height: 8px;
+    border-radius: 2px;
+    -webkit-transform: rotate(30deg) translateZ(0);
+    transform: rotate(30deg) translateZ(0);
+}
+
+.eye {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.eye:last-of-type {
+    left: 45px;
+}
+
+.body {
+    top: 37px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 58px;
+    border-radius: 0 0 10px 10px;
+}
+
+.arm {
+    left: -17px;
+    width: 14px;
+    height: 45px;
+    border-radius: 8px;
+    -webkit-animation: arm 3s infinite;
+    animation: arm 3s infinite;
+}
+
+.arm:nth-of-type(2) {
+    left: 73px;
+    -webkit-animation: arm-two 3s infinite;
+    animation: arm-two 3s infinite;
+}
+
+.leg {
+    top: 58px;
+    left: 15px;
+    width: 14px;
+    height: 22px;
+    border-radius: 0 0 6px 6px;
+}
+
+.leg:nth-of-type(4) {
+    left: 40px;
+}
+
+
+/* --- Bônus: Animações com CSS3 --- */
+
+@-webkit-keyframes head {
+    5% {
+        top: 5px;
+        -webkit-transform: rotate(0) translateZ(0);
+        transform: rotate(0) translateZ(0);
+    }
+    10% {
+        top: 0px;
+        -webkit-transform: rotate(10deg) translateZ(0);
+        transform: rotate(10deg) translateZ(0);
+    }
+    15% {
+        top: 5px;
+        -webkit-transform: rotate(0) translateZ(0);
+        transform: rotate(0) translateZ(0);
+    }
+    20% {
+        top: 0px;
+        -webkit-transform: rotate(-10deg) translateZ(0);
+        transform: rotate(-10deg) translateZ(0);
+    }
+    25% {
+        top: 5px;
+        -webkit-transform: rotate(0) translateZ(0);
+        transform: rotate(0) translateZ(0);
+    }
+    30% {
+        top: 0px;
+    }
+    35% {
+        top: 5px;
+    }
+}
+
+@-moz-keyframes head {
+    5% {
+        top: 5px;
+        -webkit-transform: rotate(0) translateZ(0);
+        transform: rotate(0) translateZ(0);
+    }
+    10% {
+        top: 0px;
+        -webkit-transform: rotate(10deg) translateZ(0);
+        transform: rotate(10deg) translateZ(0);
+    }
+    15% {
+        top: 5px;
+        -webkit-transform: rotate(0) translateZ(0);
+        transform: rotate(0) translateZ(0);
+    }
+    20% {
+        top: 0px;
+        -webkit-transform: rotate(-10deg) translateZ(0);
+        transform: rotate(-10deg) translateZ(0);
+    }
+    25% {
+        top: 5px;
+        -webkit-transform: rotate(0) translateZ(0);
+        transform: rotate(0) translateZ(0);
+    }
+    30% {
+        top: 0px;
+    }
+    35% {
+        top: 5px;
+    }
+}
+
+@keyframes head {
+    5% {
+        top: 5px;
+        -webkit-transform: rotate(0) translateZ(0);
+        transform: rotate(0) translateZ(0);
+    }
+    10% {
+        top: 0px;
+        -webkit-transform: rotate(10deg) translateZ(0);
+        transform: rotate(10deg) translateZ(0);
+    }
+    15% {
+        top: 5px;
+        -webkit-transform: rotate(0) translateZ(0);
+        transform: rotate(0) translateZ(0);
+    }
+    20% {
+        top: 0px;
+        -webkit-transform: rotate(-10deg) translateZ(0);
+        transform: rotate(-10deg) translateZ(0);
+    }
+    25% {
+        top: 5px;
+        -webkit-transform: rotate(0) translateZ(0);
+        transform: rotate(0) translateZ(0);
+    }
+    30% {
+        top: 0px;
+    }
+    35% {
+        top: 5px;
+    }
+}
+
+@-webkit-keyframes arm {
+    10% {
+        -webkit-transform: rotate(10deg) translateZ(0);
+        transform: rotate(10deg) translateZ(0);
+    }
+    20% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+    30% {
+        -webkit-transform: rotate(10deg) translateZ(0);
+        transform: rotate(10deg) translateZ(0);
+    }
+    40% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+}
+
+@-moz-keyframes arm {
+    10% {
+        -webkit-transform: rotate(10deg) translateZ(0);
+        transform: rotate(10deg) translateZ(0);
+    }
+    20% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+    30% {
+        -webkit-transform: rotate(10deg) translateZ(0);
+        transform: rotate(10deg) translateZ(0);
+    }
+    40% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+}
+
+@keyframes arm {
+    10% {
+        -webkit-transform: rotate(10deg) translateZ(0);
+        transform: rotate(10deg) translateZ(0);
+    }
+    20% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+    30% {
+        -webkit-transform: rotate(10deg) translateZ(0);
+        transform: rotate(10deg) translateZ(0);
+    }
+    40% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+}
+
+@-webkit-keyframes arm-two {
+    10% {
+        -webkit-transform: rotate(-10deg) translateZ(0);
+        transform: rotate(-10deg) translateZ(0);
+    }
+    20% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+    30% {
+        -webkit-transform: rotate(-10deg) translateZ(0);
+        transform: rotate(-10deg) translateZ(0);
+    }
+    40% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+}
+
+@-moz-keyframes arm-two {
+    10% {
+        -webkit-transform: rotate(-10deg) translateZ(0);
+        transform: rotate(-10deg) translateZ(0);
+    }
+    20% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+    30% {
+        -webkit-transform: rotate(-10deg) translateZ(0);
+        transform: rotate(-10deg) translateZ(0);
+    }
+    40% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+}
+
+@keyframes arm-two {
+    10% {
+        -webkit-transform: rotate(-10deg) translateZ(0);
+        transform: rotate(-10deg) translateZ(0);
+    }
+    20% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+    30% {
+        -webkit-transform: rotate(-10deg) translateZ(0);
+        transform: rotate(-10deg) translateZ(0);
+    }
+    40% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+        transform: rotate(0deg) translateZ(0);
+    }
+}
+
+
+/* -------------- */
+
+#sobre {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    color: rgba(0, 0, 0, .4);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .06);
+    border-radius: 10px;
+}
+
+#sobre h1 {
+    font-size: 2.6em;
+    margin: 0;
+}
+
+#sobre p {
+    font-size: 1.3em;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+#sobre small {
+    font-size: 1.2em;
+}
+
+#sobre a {
+    color: rgba(0, 0, 0, .4);
+}
+</style>
+<div class="android">
+    <div class="head">
+        <div class="eye"></div>
+        <div class="eye"></div>
+    </div>
+    <div class="body">
+        <div class="arm"></div>
+        <div class="arm"></div>
+        <div class="leg"></div>
+        <div class="leg"></div>
+    </div>
+</div>

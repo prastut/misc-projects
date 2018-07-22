@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800px" height="220px" viewBox="0 0 800 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>group-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M795,169.999 C795,172.761 797.238,175 800,175 L800,188 C782.327,188 768,202.326 768,220 L32,220 C32,202.326 17.673,188 0,188 L0,175 C2.762,175 5,172.761 5,169.999 C5,167.239 2.762,165 0,165 L0,155 C2.762,155 5,152.762 5,150 C5,147.238 2.762,145 0,145 L0,135 C2.762,135 5,132.761 5,130 C5,127.238 2.762,125 0,125 L0,115 C2.762,115 5,112.761 5,110 C5,107.238 2.762,105 0,105 L0,95 C2.762,95 5,92.762 5,90 C5,87.239 2.762,85 0,85 L0,75 C2.762,75 5,72.761 5,70 C5,67.239 2.762,65 0,65 L0,55 C2.762,55 5,52.762 5,50 C5,47.239 2.762,45 0,45 L0,32 C17.673,32 32,17.673 32,0 L768,0 C768,17.673 782.327,32 800,32 L800,45 C797.238,45 795,47.239 795,50 C795,52.762 797.238,55 800,55 L800,65 C797.238,65 795,67.239 795,70 C795,72.761 797.238,75 800,75 L800,85 C797.238,85 795,87.239 795,90 C795,92.762 797.238,95 800,95 L800,105 C797.238,105 795,107.238 795,110 C795,112.761 797.238,115 800,115 L800,125 C797.238,125 795,127.238 795,130 C795,132.761 797.238,135 800,135 L800,145 C797.238,145 795,147.238 795,150 C795,152.762 797.238,155 800,155 L800,165 C797.238,165 795,167.239 795,169.999 L795,169.999 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="group-1" sketch:type="MSLayerGroup">
+            <g id="circle-1-+-circle-2-Mask">
+                <mask id="mask-2" sketch:name="Mask" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#BDE4F3" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <circle id="circle-1" stroke="#9AD5EC" stroke-width="20" fill-opacity="0" fill="#9CE1D7" sketch:type="MSShapeGroup" mask="url(#mask-2)" cx="742" cy="38" r="121"></circle>
+                <circle id="circle-2" stroke="#9AD5EC" stroke-width="10" fill-opacity="0" fill="#9CE1D7" sketch:type="MSShapeGroup" mask="url(#mask-2)" cx="742" cy="38" r="81"></circle>
+            </g>
+            <rect id="rect-1" stroke="#79B8D0" stroke-width="7" fill-opacity="0" fill="#FFFFFF" sketch:type="MSShapeGroup" x="38" y="19" width="720" height="180"></rect>
+        </g>
+    </g>
+</svg>

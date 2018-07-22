@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The annual technical fest of VIT Universuty Chennai Campus">
+    <meta name="keywords" content="upcoming college festival, vit university,techfest, tech fest, technoVIT,technovit,technovit cultural events,informal events,technical events,formal events,symposium events,qubit,vitness,diseno,connectivitee,taikuun,glitz,vit,chennai,events website">
+    <meta name="author" content="krshubham, Kumar Shubham, prastut,Prastut Kumar,prashantkbhardwaj, Prashant Bhardwaj,Aman Saha,Prateek Singh,technovit, VIT University,Chennai">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>technovit'16| VIT Chennai</title>
+    <meta name="description" content="Card Expansion Effect with SVG clipPath" />
+    <meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+    <meta name="author" content="Claudio Calautti for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/videomod.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.dropdown.min.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        var root = document.getElementsByTagName('html')[0];
+        root.setAttribute('class', 'ff');
+    };
+    </script>
+    <style>
+    h2 {
+        color: white
+    }
+    
+    .icon-list {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    
+    .img-fix {
+        display: inline-block;
+        float: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .headermenu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 5px 3px 5px #000;
+        margin-top: -15px;
+    }
+    
+    .headermenu ul a {
+        margin: 10px;
+        color: white;
+        list-style: none;
+    }
+    
+    .headermenu ul a:hover {
+        margin: 10px;
+        color: #e2292a;
+        list-style: none;
+    }
+    
+    @media(max-width:768px) {
+        #menu-technovit {
+            display: none;
+        }
+    }
+    </style>
+    <!--style>
+        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+        .embed-container iframe, .embed-container object, .embed-container embed { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style-->
+</head>
+
+<body class="demo-3">
+    <div class="container">
+        <div class="menu-wrap">
+            <nav class="menu-top">
+                <div class="profile"><img class="img-fix" src="img/logo.png" alt="TechnoVIT" /><span></span></div>
+                <div class="icon-list">
+                    <a href="../new-index.html">Home</a>
+                    <a href="technovit.html"> technovit'16</a>
+                    <a href="http://technovit.eventze.in/home/login">Registrations</a>
+                    <!-- <a href="../Schedule_technovit'16.pdf"> Schedule</a> -->
+                    <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                    <a href="team.html"> Patrons</a>
+                            <a href="theme.html"> Theme</a>
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a> <!-- <a href="faq.html"> FAQ</a> -->
+                    <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                    <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                    <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                </div>
+            </nav>
+            <nav class="menu-side">
+                <a href="qubit.html"><i class="fa fa-fw fa-star-o"></i> Qubit</a>
+                <a href="connectivitieee.html"><i class="fa fa-fw fa-star-o"></i> ConnectiVITieee</a>
+                <a href="diseno.html"><i class="fa fa-fw fa-star-o"></i> Dise&#241;o</a>
+                <a href="vitness.html"><i class="fa fa-fw fa-star-o"></i> VITness</a>
+                <a href="taikuun.html"><i class="fa fa-fw fa-star-o"></i> Tai:kuun</a>
+                <a href="fashion.html"><i class="fa fa-fw fa-star-o"></i> Fashion</a>
+                <!-- <a href="gaming.html"><i class="fa fa-fw fa-star-o"></i> Informal/Gaming</a> -->
+            </nav>
+        </div>
+        <a class="menu-button" id="open-button"></a>
+        <div class="content-wrap" id="main-content">
+            <div class="content">
+                <div class="mymenu" id="menu-technovit">
+                    <header class="headermenu">
+                        <ul style="height: 59px;">
+                            <div style=" position: absolute; z-index: 99;">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                            <a href="../new-index.html">Home</a>
+                            <a href="technovit.html"> technovit'16</a>
+                            <a href="http://technovit.eventze.in/home/login">Registrations</a>
+                            <!-- <a href="../Schedule_technovit'16.pdf"> Schedule</a> -->
+                            <a href="index.html" data-jq-dropdown="#jq-dropdown-1">Schools</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/sponsors"> Sponsors</a>
+                            <a href="team.html"> Patrons</a>
+                            <a href="theme.html"> Themes</a>
+                            <a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/contactus"> Contact Us</a> <!-- <a href="faq.html"> FAQ</a> --><a href="https://sites.google.com/a/vit.ac.in/chennaitechnovit16/faqs">FAQ</a>
+                            <a href="#" data-jq-dropdown="#jq-dropdown-2">Schedule</a>
+                            <a href="https://goo.gl/forms/ZNxM8C8AKt3pVWFJ2" style="color: red;">Register for Marathon</a>
+                            <div style=" position: absolute; z-index: 99; right: 0; padding-right: 10px;margin-top:-9px!important;">
+                                <img src="img/vitcc.png" width="130" height="58" style="box-shadow: none !important;" id="logo-technovit">
+                                <!-- <section class="Panel Panel--intro"> -->
+                            </div>
+                        </ul>
+                    </header>
+                </div>
+                <!-- trianglify pattern container -->
+                <div class="pattern pattern--hidden"></div>
+                <!-- cards -->
+                <div class="wrapper" style="overflow: hidden;">
+                    <a href="#">
+                        <div class="card" style="width: 100%; overflow: hidden;">
+                            <div class="card__container" id="about-us">
+                                <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <clipPath id="clipPath1">
+                                            <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                        </clipPath>
+                                    </defs>
+                                    <!-- <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/mainbanner.jpg"></image> -->
+                                </svg>
+                                <div class="card__content">
+                                    <i class="card__btn-close fa fa-times"></i>
+                                    <div class="card__caption" style="padding: 30px 200px !important;">
+                                        <h2 class="card__title">About technovit'16</h2>
+                                    </div>
+                                    <div class="card__copy">
+                                    <p></p>
+                                        <p>It is the carnival time of the year and technoVIT 2016 is back with a vengeance from 15th September to 17th September. The tech maniac show will portray startling works and ideas bigger than ever.</p>
+                                        <p>TECHNOVIT, VITCC’s technical fest has been a platform for brightest minds in technology and engineering for years and promises to double the madness in the new edition.</p>
+                                        <p>Witness the smart city with innovative initiatives with enablers such as smart grids, open data, internet of things and glass fibre networks. Bring life to your profound ideas of robots, locomotive, gaming and perplexing problem solving.</p>
+                                        <p>Contribute to the community by joining in here in creating smart infrastructure and technology and be a part of the magnificent festival.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                        </div>
+                    </a>
+                </div>
+                <!-- /cards -->
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <!-- JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/vendors/trianglify.min.js"></script>
+    <script src="js/vendors/TweenMax.min.js"></script>
+    <script src="js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="js/vendors/cash.min.js"></script>
+    <script src="js/Card-polygon.js"></script>
+    <script src="js/demo-3.js"></script>
+    <script src="js/uiMorphingButton_fixed.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        setTimeout(function() {
+            $('.card__container').addClass('card__container--closed');
+            $('.card__btn-close').trigger('click');
+            $('.card__container').addClass('card__container--closed');
+        }, 0);
+
+    });
+    </script>
+    <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
+    <div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="qubit.html">Qubit - SCSE</a></li>
+            <li><a href="connectivitieee.html">Connectivitiee - SENSE and SELECT</a></li>
+            <li><a href="diseno.html">Dise&#241;o - SMBS</a></li>
+            <li><a href="taikuun.html">Tai:kuun - Business</a></li>
+            <li><a href="vitness.html">VITness - Law</a></li>
+            <li><a href="fashion.html">Glitz - Fashion</a></li>
+        </ul>
+    </div>
+    <div id="jq-dropdown-2" class="jq-dropdown jq-dropdown-tip">
+        <ul class="jq-dropdown-menu">
+            <li><a href="documents/day1.pdf">Day 1 Schedule</a></li>
+            <li><a href="documents/day2.pdf">Day 2 Schedule</a></li>
+            <li><a href="documents/day3.pdf">Day 3 Schedule</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
